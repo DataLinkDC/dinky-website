@@ -3,21 +3,40 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 
 const FeatureList = [
+    {
+        title: '沉侵式',
+        Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+        description: (
+            <>
+                提供自动提示与补全、语法高亮、语句美化、语法校验和逻辑检查、调试预览结果、
+                字段级血缘分析等功能
+            </>
+        ),
+    },
   {
     title: '易用性',
     Svg: require('@site/static/img/ease_of_use.svg').default,
     description: (
       <>
-          用户只需要专注 FlinkSQL 的口径书写，并且可以实时进行检查与调试，在任务提交的过程则是快速的自动化托管，以实现一个 FlinkSQL 语句可以在所有的执行模式与外部集群上随意切换
+          多种执行模无感知切换，自动化托管实时任务及恢复点，自定义各种配置
       </>
     ),
   },
+    {
+          title: '一站式',
+          Svg: require('@site/static/img/one_stop.svg').default,
+          description: (
+              <>
+                  提供从FlinkSQL开发调试到作业上线下线的运维监控及OLAP的即席查询，使数仓建设及数据治理一体化。
+              </>
+          ),
+      },
   {
     title: '易部署',
     Svg: require('@site/static/img/easy_of_deploy.svg').default,
     description: (
       <>
-          用户只需要专注 FlinkSQL 的口径书写，并且可以实时进行检查与调试，在任务提交的过程则是快速的自动化托管，以实现一个 FlinkSQL 语句可以在所有的执行模式与外部集群上随意切换
+         不绑定任何中间件，Spring Boot 应用快速部署
       </>
     ),
   },
@@ -26,37 +45,16 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        SPI插件化机制支持用户自定义扩展新功能，如数据源、报警方式、自定义语法等
       </>
     ),
   },
-    {
-        title: '沉侵式',
-        Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-        description: (
-            <>
-                提供了自动提示与补全、语法高亮、语句美化、语法校验和逻辑检查、调试预览结果、字段级血缘分析等专业的功能，使 FlinkSQL 的开发如同 SQL 开发一样舒适与简单
-            </>
-        ),
-    },
-    {
-        title: '一站式',
-        Svg: require('@site/static/img/one_stop.svg').default,
-        description: (
-            <>
-                Extend or customize your website layout by reusing React. Docusaurus can
-                be extended while reusing the same header and footer.
-            </>
-        ),
-    },
     {
         title: '无侵入',
         Svg: require('@site/static/img/no_invasion.svg').default,
         description: (
             <>
-                Extend or customize your website layout by reusing React. Docusaurus can
-                be extended while reusing the same header and footer.
+               不需要在任何 flink 集群修改源码或添加插件，无感知连接和监控 Flink 集群
             </>
         ),
     },
