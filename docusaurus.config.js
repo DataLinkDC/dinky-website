@@ -43,9 +43,9 @@ const config = {
           // Please change this to your repo.
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
             if (locale !== 'zh-Hans') {
-              return `https://github.com/DataLinkDC/dinky-website/tree/walkhan/master/i18n/${locale}/${docPath}`;
+              return `https://github.com/DataLinkDC/dinky-website/tree/master/i18n/${locale}/${docPath}`;
             }
-            return `https://github.com/DataLinkDC/dinky-website/tree/walkhan/master/${versionDocsDirPath}/${docPath}`;
+            return `https://github.com/DataLinkDC/dinky-website/tree/master/${versionDocsDirPath}/${docPath}`;
           },
         },
 //        blog: {
@@ -216,9 +216,9 @@ const config = {
           routeBasePath: 'download',
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
             if (locale !== 'zh-Hans') {
-              return `https://github.com/DataLinkDC/dinky-website/tree/walkhan/master/i18n/${locale}/${docPath}`;
+              return `https://github.com/DataLinkDC/dinky-website/tree/master/i18n/${locale}/${docPath}`;
             }
-            return `https://github.com/DataLinkDC/dinky-website/tree/walkhan/master/${versionDocsDirPath}/${docPath}`;
+            return `https://github.com/DataLinkDC/dinky-website/tree/master/${versionDocsDirPath}/${docPath}`;
           },
           sidebarPath: require.resolve('./sidebarsDevelopment.js'),
         },
