@@ -53,7 +53,7 @@ $ yarn build / npm run build
    - 修改最后一个所有版本在 `/src/pages/version/index.js`
 
   
-##文档目录结构
+## 文档目录结构
 ``` html
 blog --博客分享 
 docs --最新文档
