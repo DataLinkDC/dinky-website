@@ -3,11 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "clean": "npm cache clean -f",
     "clear": "docusaurus clear",
     "build": "docusaurus build",
     "start": "docusaurus start",
-    "install": "npm i --force",
     "deploy": "docusaurus deploy",
     "docusaurus": "docusaurus",
     "swizzle": "docusaurus swizzle",

@@ -19,127 +19,36 @@ Issue 是引出一个 Feature 或 Bug 等的重要步骤，在单个 Issue 中�
 标题格式：[`Issue 类型`][`模块名`] `Issue 描述`
 
 其中`Issue 类型`如下：
-
-<table>
-    <thead>
-        <tr>
-            <th style="width: 10%; text-align: center;">Issue 类型</th>
-            <th style="width: 20%; text-align: center;">描述</th>
-            <th style="width: 20%; text-align: center;">样例</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="text-align: center;">Feature</td>
-            <td style="text-align: center;">包含所期望的新功能和新特性</td>
-            <td style="text-align: center;">[Feature][admin] Add xxx admin in xxx controller</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">Bug</td>
-            <td style="text-align: center;">程序中存在的 Bug</td>
-            <td style="text-align: center;">[Bug][admin] Throw exception when xxx</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">Improvement</td>
-            <td style="text-align: center;">针对目前程序的一些改进，不限于代码格式，程序性能等</td>
-            <td style="text-align: center;">[Improvement][executor] Improve xxx on executor</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">Test</td>
-            <td style="text-align: center;">专门针对测试用例部分</td>
-            <td style="text-align: center;">[Test][metadata-mysql] Add xxx metadata-mysql test</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">Sub-Task</td>
-            <td style="text-align: center;">一般都是属于 Feature 类的子任务，针对大 Feature，可以将其分成很多个小的子任务来一一完成</td>
-            <td style="text-align: center;">[Sub-Task][executor] Implement xxx in xxx</td>
-        </tr>
-    </tbody>
-</table>
-
+| Issue 类型       | 描述                   | 样例 |
+| ---------------- | -------------------------- | ------ |
+| Feature       | 包含所期望的`新功能`和`新特性   `                  |   [Feature][admin] Add xxx admin in xxx controller   |
+| Bug |  程序中存在的` Bug `                 |   [Bug][admin] Throw exception when xxx|
+| Improvement           | 针对目前程序的一些`改进`，不限于`代码格式`，`程序性能`等             |  [Improvement][executor] Improve xxx on executor    |
+| Test           | 专门针对`测试用例`部分             |    [Test][metadata-mysql] Add xxx metadata-mysql test  |
+| Sub-Task           | 一般都是属于 `Feature` 类的子任务，针对大 Feature，可以将其分成很多个小的子任务来一一完成                |  [Sub-Task][executor] Implement xxx in xxx    |
 
 
 其中`模块名`如下：
 
-<table>
-    <thead>
-        <tr>
-            <th style="width: 10%; text-align: center;">模块名</th>
-            <th style="width: 20%; text-align: center;">描述</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="text-align: center;">admin</td>
-            <td style="text-align: center;">管理模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">alert</td>
-            <td style="text-align: center;">报警模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">app</td>
-            <td style="text-align: center;">Flink APP 模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">assembly</td>
-            <td style="text-align: center;">打包模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">client</td>
-            <td style="text-align: center;">Flink Client 模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">common</td>
-            <td style="text-align: center;">基础模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">connectors</td>
-            <td style="text-align: center;">Flink Connector 模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">core</td>
-            <td style="text-align: center;">核心模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">daemon</td>
-            <td style="text-align: center;">守护线程模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">doc</td>
-            <td style="text-align: center;">资源模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">docs</td>
-            <td style="text-align: center;">官网文档</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">executor</td>
-            <td style="text-align: center;">执行器模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">extends</td>
-            <td style="text-align: center;">扩展模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">function</td>
-            <td style="text-align: center;">Flink UDF 模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">gateway</td>
-            <td style="text-align: center;">提交网关模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">metadata</td>
-            <td style="text-align: center;">元数据模块</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">web</td>
-            <td style="text-align: center;">Web 模块</td>
-        </tr>
-    </tbody>
-</table>
 
+| 模块名  |  描述 |
+|---|---|
+| admin |  管理模块 |
+| alert | 报警模块 |
+| app | Flink APP 模块 |
+|  assembly | 打包模块 |
+|  client | Flink Client 模块 |
+|  common | 基础模块 |
+|  connectors | Flink Connector 模块 |
+|  core | 核心模块 |
+|  doc | 资源模块 |
+|  docs | 官网文档 |
+|  executor | 执行器模块 |
+|  extends | 扩展模块 |
+|  function | Flink UDF 模块 |
+|  gateway | 提交网关模块 |
+|  metadata | 元数据模块 |
+|  web | Web 模块 |
 
 
 ### Issue 内容模板

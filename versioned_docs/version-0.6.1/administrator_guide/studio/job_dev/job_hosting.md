@@ -37,7 +37,7 @@ Dinky 将通过 JobManager 的 Rest 端口提交 FlinkSQL 作业至外部的 Fli
 
 **适用于：** 作业资源共享，启动快，批作业、Flink OLAP 查询、资源占用小的流作业。
 
-**注意：** 需要手动启动 Yarn Session 集群并注册到 Dinky 的集群实例，请参考[集群管理](/zh-CN/administrator_guide/register_center/cluster_manage.md)。
+**注意：** 需要手动启动 Yarn Session 集群并注册到 Dinky 的集群实例，请参考[集群管理](../../register_center/cluster_manage)。
 
 ### Yarn Per-Job
 
@@ -47,7 +47,7 @@ Dinky 将通过 Yarn 来创建 Flink Yarn Per-Job 集群。
 
 **适用于：** 资源占用较多的批作业和流作业。
 
-**注意：** 需要在 Dinky 的集群配置中注册相关的 Hadoop 和 Flink 配置，请参考[集群管理](/zh-CN/administrator_guide/register_center/cluster_manage.md)。
+**注意：** 需要在 Dinky 的集群配置中注册相关的 Hadoop 和 Flink 配置，请参考[集群管理](../../register_center/cluster_manage)。
 
 ### Yarn Application
 
@@ -57,7 +57,7 @@ Dinky 将通过 Yarn 来创建 Flink Yarn Application 集群。
 
 **适用于：** 资源占用较多的批作业和流作业。
 
-**注意：** 需要在 Dinky 的集群配置中注册相关的 Hadoop 和 Flink 配置，请参考[集群管理](/zh-CN/administrator_guide/register_center/cluster_manage.md)。
+**注意：** 需要在 Dinky 的集群配置中注册相关的 Hadoop 和 Flink 配置，请参考[集群管理](../../register_center/cluster_manage)。
 
 ### Kubernetes Session
 
@@ -65,7 +65,7 @@ Dinky 将通过暴露的 NodePort 端口提交 FlinkSQL 作业至外部的 Flink
 
 **特点：** 作业资源隔离，启动快，动态扩容。
 
-**注意：** 需要在 Dinky 的集群配置中注册相关的 Kubernetes 和 Flink 配置，请参考[集群管理](/zh-CN/administrator_guide/register_center/cluster_manage.md)。
+**注意：** 需要在 Dinky 的集群配置中注册相关的 Kubernetes 和 Flink 配置，请参考[集群管理](../../register_center/cluster_manage)。
 
 **适用于：** 作业资源隔离，启动快，动态扩容，批作业、Flink OLAP 查询、资源占用小的流作业。
 
@@ -77,7 +77,7 @@ Dinky 将通过 dlink-app 镜像创建的 Flink Kubernetes Application 集群。
 
 **适用于：** 作业资源隔离，启动慢，动态扩容，节约网络资源，资源占用较多的批作业和流作业。
 
-**注意：** 需要在 Dinky 的集群配置中注册相关的 Kubernetes 和 Flink 配置，请参考[集群管理](/zh-CN/administrator_guide/register_center/cluster_manage.md)。
+**注意：** 需要在 Dinky 的集群配置中注册相关的 Kubernetes 和 Flink 配置，请参考[集群管理](../../register_center/cluster_manage)。
 
 ## DB SQL
 
@@ -85,4 +85,4 @@ Dinky 将把 sql 提交到对应的数据源执行。
 
 **适用于：** 原生 SQL 查询、执行。
 
-**注意：** 需要在数据源中心注册数据库，请参考[数据源管理](/zh-CN/administrator_guide/register_center/datasource_manage.md)
+**注意：** 需要在数据源中心注册数据库，请参考[数据源管理](../../register_center/datasource_manage)

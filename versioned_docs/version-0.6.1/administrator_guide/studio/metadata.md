@@ -40,7 +40,7 @@ title: 元数据管理
 ![metadata_gen_createtable_sql](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/metadata/metadata_gen_createtable_sql.png)
 
 
-**如何配置数据源请参考** [数据源管理](/zh-CN/administrator-guide/registerCenter/datasource_manage.md)。
+**如何配置数据源请参考** [数据源管理](../register_center/datasource_manage)。
 
 
 

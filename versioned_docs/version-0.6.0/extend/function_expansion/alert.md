@@ -18,7 +18,7 @@ Dinky 学习了 ``Apache Dolphinscheduler`` 的插件扩展机制，可以在 Di
 
 ## 准备工作
 - 本地开发环境搭建
-    - 参考 [开发者本地调试手册](/zh-CN/developer_guide/local_debug.md)
+    - 参考 [开发者本地调试手册](../../developer_guide/local_debug)
 
 ## 后端开发
 - 在 dlink-alert 新建子模块 , 命名规则为 `dlink-alert-{报警类型}` 在子模块中实现 `dlink-alert-{报警类型}` 的报警机制
@@ -152,4 +152,4 @@ export const DingTalkSvg = () => (
 ----
 
 
-至此 , 基于 Dinky 扩展告警完成 , 如您也有扩展需求 ,请参照 [如何 Issuse](/zh-CN/developer_guide/issue.md)    [如何提交 PR](/zh-CN/developer_guide/pull_request.md)
+至此 , 基于 Dinky 扩展告警完成 , 如您也有扩展需求 ,请参照 [如何 Issuse](../../developer_guide/contribution/issue)    [如何提交 PR](../../developer_guide/contribution/pull_request)

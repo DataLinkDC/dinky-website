@@ -191,7 +191,7 @@ maven ->> dlink->> 生命周期->> 跳过测试 ->> 双击install
 打包完成后 安装包见项目根下  build 文件夹下
 ```
 
-说明：如果要对 Dinky 做二次开发，请参考[开发调试](/docs/developer_guide/debug)
+说明：如果要对 Dinky 做二次开发，请参考[开发调试](../developer_guide/debug)
 
 ### Linux 编译
 
@@ -204,7 +204,7 @@ mvn clean install -Dmaven.test.skip=true
 
 切换到 Dinky 根目录下得 build 文件夹下，即可出现编译后的安装包。
 
-以上就是 Dinky 源码编译的详细步骤，Dinky 如何安装部署，请查看下一章节[Dinky部署](/docs/build_deploy/deploy)
+以上就是 Dinky 源码编译的详细步骤，Dinky 如何安装部署，请查看下一章节[Dinky部署](./deploy)
 
 
 

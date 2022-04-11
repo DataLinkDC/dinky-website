@@ -43,7 +43,7 @@ Flink SQL 支持丰富的上下游存储，实时计算平台支持支持 Flink 
 
 ### 其他数据源
 
-具体数据源请参考[扩展数据源](/zh-CN/extend/datasource.md)
+具体数据源请参考[扩展数据源](./extend/function_expansion/datasource)
 
 ## 管理控制台介绍
 

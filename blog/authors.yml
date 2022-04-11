@@ -1,11 +1,11 @@
 endi:
-  name: Endilie Yacop Sucipto
+  name: dinky
   title: Maintainer of Docusaurus
   url: https://github.com/DataLinkDC/dlink
   image_url: /static/img/side_dinky.svg
 
-yangshun:
-  name: Yangshun Tay
+dinky:
+  name: dinky
   title: Front End Engineer @ Facebook
   url: https://github.com/DataLinkDC/dlink
   image_url: /static/img/side_dinky.svg

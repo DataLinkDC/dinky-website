@@ -20,7 +20,7 @@ git clone https://github.com/<your-github-user-name>/dlink
 ```
 ### 文档环境
 
-Dinky 网站由 [docsify](https://docsify.js.org/#/zh-cn/quickstart) 提供支持。
+Docusaurus 网站由 [Docusaurus](https://docusaurus.io/docs/category/getting-started) 提供支持。
 
 请确保你已经安装了 nodejs 和 npm 。详细安装步骤可以查阅本地调试。
 
@@ -29,10 +29,10 @@ Dinky 网站由 [docsify](https://docsify.js.org/#/zh-cn/quickstart) 提供支�
 在 Dinky 的根目录下执行：
 
 ```shell
-# 推荐全局安装 docsify-cli 工具
-npm i docsify-cli -g
-# 运行 docsify serve 启动一个本地服务器
-docsify serve docs
+# 推荐
+npm install
+# 运行 Docusaurus serve 启动一个本地服务器
+npm start 
 ```
 
 可以方便地实时预览效果。默认访问地址 [http://localhost:3000](http://localhost:3000/)

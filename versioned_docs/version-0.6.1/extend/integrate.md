@@ -50,7 +50,7 @@ title: 集成
    - Iceberg
   
 
-[Hudi](https://github.com/apache/hudi)及[Iceberg](https://github.com/apache/iceberg)请移步到github自行编译或者下载
+[Hudi](https://github.com/apache/hudi) 及 [Iceberg](https://github.com/apache/iceberg) 请移步到github自行编译或者下载
 
 ## HADOOP
   - [flink-shaded-hadoop-3-uber](https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/flink/flink-shaded-hadoop-3-uber)

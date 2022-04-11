@@ -15,43 +15,14 @@ Pull Request 本质上是一种软件的合作方式，是将涉及不同功能�
 标题格式：[`Pull Request 类型`-`Issue 号`][`模块名`] `Pull Request 描述`
 
 其中`Pull Request 类型`和`Issue 类型`的对应关系如下：
-
-<table>
-    <thead>
-        <tr>
-            <th style="width: 10%; text-align: center;">Issue 类型</th>
-            <th style="width: 20%; text-align: center;">Pull Request 类型</th>
-            <th style="width: 20%; text-align: center;">样例（假设 Issue 号为 3333）</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="text-align: center;">Feature</td>
-            <td style="text-align: center;">Feature</td>
-            <td style="text-align: center;">[Feature-3333][admin] Implement xxx</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">Bug</td>
-            <td style="text-align: center;">Fix</td>
-            <td style="text-align: center;">[Fix-3333][admin] Fix xxx</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">Improvement</td>
-            <td style="text-align: center;">Improvement</td>
-            <td style="text-align: center;">[Improvement-3333][alert] Improve the performance of xxx</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">Test</td>
-            <td style="text-align: center;">Test</td>
-            <td style="text-align: center;">[Test-3333][metadata-mysql] Add the e2e test of xxx</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">Sub-Task</td>
-            <td style="text-align: center;">Sub-Task 对应的父类型</td>
-            <td style="text-align: center;">[Feature-3333][admin] Implement xxx</td>
-        </tr>
-    </tbody>
-</table>
+| Issue 类型       | 描述                           | 样例 |
+| ---------------- | -------------------------- | ------ |
+|  Issue 类型   |   Pull Request 类型     | 样例（假设 Issue 号为 3333）|
+|  Feature   |    Feature    |    [Feature-3333][admin] Implement xxx    |
+|  Bug   |   Fix     |    [Fix-3333][admin] Fix xxx    |
+|  Improvement   |   Improvement     |    [Improvement-3333][alert] Improve the performance of xxx    |
+|   Test  |    Test    |   [Test-3333][metadata-mysql] Add the e2e test of xxx     |
+| Sub-Task    |   Sub-Task 对应的父类型     |   [Feature-3333][admin] Implement xxx     |
 
 
 

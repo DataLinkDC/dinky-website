@@ -46,7 +46,7 @@ git clone git://github.com/DataLinkDC/dlink.git
 
 该指南介绍了关于如何设置 IntelliJ IDEA 来进行 Dlink 前后端开发。Eclipse 不建议使用。
 
-以下文档描述了 IntelliJ IDEA 2021.3 (https://www.jetbrains.com/idea/download/) 的设置步骤以及 Dlink 的导入步骤。
+以下文档描述了 [IntelliJ IDEA 2021.3](https://www.jetbrains.com/idea/download/) 的设置步骤以及 Dlink 的导入步骤。
 
 所以以下简称 IDEA 来表示 IntelliJ IDEA 。
 
