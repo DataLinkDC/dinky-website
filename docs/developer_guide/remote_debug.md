@@ -31,7 +31,7 @@ mvn clean package -Dmaven.test.skip=true
 
 ### 图形化编译
 
-![install](http://www.aiwenmo.com/dinky/docs/zh-CN/developer-guide/remote_debug/local_package_install.jpg)
+![install](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/local_package_install.jpg)
 图形化编译，需要跳过 test ，并进行 clean ==> install。
 
 **注意：**如果不执行 install 生成的 jar安装不到本地 别的依赖就识别不到本地仓库这些包  所以可能导依赖的时候会报错 CustomTableEnvironmentImpl 这个类未定义 。
@@ -61,7 +61,7 @@ mvn clean package -Dmaven.test.skip=true
 
 ### 修改配置文件
 
-修改 dlink 根目录下 /dlink-admin/src/main/resources/application.ym文件
+修改 dlink 根目录下 **/dlink-admin/src/main/resources/application.yml** 文件
 
 配置数据库连接信息：
 
@@ -79,7 +79,25 @@ spring:
 #    clean-disabled: true
 ##    baseline-on-migrate: true
 #    table: dlink_schema_history
-
+  # Redis配置
+  #sa-token如需依赖redis，请打开redis配置和pom.xml、dlink-admin/pom.xml中依赖
+  # redis:
+  #   host: localhost
+  #   port: 6379
+  #   password:
+  #   database: 10
+  #   jedis:
+  #     pool:
+  #       # 连接池最大连接数（使用负值表示没有限制）
+  #       max-active: 50
+  #       # 连接池最大阻塞等待时间（使用负值表示没有限制）
+  #       max-wait: 3000
+  #       # 连接池中的最大空闲连接数
+  #       max-idle: 20
+  #       # 连接池中的最小空闲连接数
+  #       min-idle: 5
+  #   # 连接超时时间（毫秒）
+  #   timeout: 5000
 server:
   port: 8888
 
@@ -91,9 +109,9 @@ mybatis-plus:
     db-config:
       id-type: auto
   configuration:
-  ##### mybatis-plus打印完整sql(只适用于开发环境)
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-#    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+  ##### mybatis-plus打印完整sql(只适用于开发环境)  # 此处如果想查看具体执行的SQL 本地调试的时候也可以打开  方便排错
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl  
 
 # Sa-Token 配置
 sa-token:
@@ -115,7 +133,7 @@ sa-token:
 
 ### 初始化数据库
 
-在 MySQL 数据库创建 dlink 用户并在 dlink 数据库中执行 dlink-doc/sql/dlink.sql 文件。此外 dlink-doc/sql/dlink_history.sql 标识了各版本的升级 sql。
+在 MySQL 数据库创建 dlink 用户并在 dlink 数据库中执行 **dlink-doc/sql/dlink.sql** 文件。此外 **dlink-doc/sql/dlink_history.sql** 标识了各版本的升级 sql。
 
 以上文件修改完成后，就可以启动 Dinky。
 
@@ -126,15 +144,21 @@ sa-token:
 
 **注意:** hive-site.xml 需要使用到 Hive Catalog 时添加;
 
-### 添加plugins 插件依赖
+### 添加 plugins 插件依赖
 
-根据 job 的场景自行选择插件依赖 jar, 选择需要的 jars , 注意需要将该目录添加为全局库,如下所示：
+根据 job 的场景自行选择插件依赖 jar, 选择需要的 jars , 右键添加为库,如下所示：
 
-![lib](http://www.aiwenmo.com/dinky/docs/zh-CN/developer-guide/remote_debug/jars_add_to_repo.jpg)
+- 选中 jars 添加为库
+![lib](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/jars_add_to_repo.jpg)
 
-![choose_addrepo_global](http://www.aiwenmo.com/dinky/docs/zh-CN/developer-guide/remote_debug/choose_addrepo_global.jpg)
 
+- 弹框中选择信息如图:
+  - 名称: 自定义
+  - 级别: 项目库
+  - 添加到模块: dlink-admin
 
+![choose_addrepo_global](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/choose_addrepo_global.jpg)   
+![choose_addrepo_global](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/create_repo.png)
 
 
 ### 启动 Yarn Session 集群
@@ -151,13 +175,13 @@ yarn-session.sh -n 2 -jm 1024 -tm 4096 -s 6 -d
 
 输入 admin/admin 登录。
 
-**说明：** 在 Dinky-0.6 版本后，不需要额外启动前端，启动后端后便可访问 `127.0.0.1:8888`
+**说明：** 在 Dinky-0.6 版本后，不需要额外启动前端，启动后端便可访问 `127.0.0.1:8888`  如需启动前端: 进入到 **dlink-web** 执行 **npm start** 访问 **localhost:8000**
 
 
 
 ## 远程调试作业示例
 
-以上远程调试环境搭建完成后，就如同在服务器部署上类似，可以对作业远程提交到Flink集群。下面以Flink CDC ==》Hudi做为远程调试的作业
+以上远程调试环境搭建完成后，就如同在服务器部署上类似，可以对作业远程提交到 Flink 集群。下面以 Flink CDC ==》 Hudi 做为远程调试的作业
 
 ### 脚本准备
 
@@ -280,26 +304,26 @@ insert into sink_order_mysql_goods_order_pay select * from source_order_my
 
 **SQL 逻辑语法校验**
 
-![check_sql](http://www.aiwenmo.com/dinky/docs/zh-CN/developer-guide/remote_debug/check_sql.jpg)
+![check_sql](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/check_sql.jpg)
 
 **获取JobPlan**
 
-![check_sql](http://www.aiwenmo.com/dinky/docs/zh-CN/developer-guide/remote_debug/job_plan.jpg)
+![check_sql](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/job_plan.jpg)
 
 **Flink Web UI 查看作业**
 
-![job_flinkwebui](http://www.aiwenmo.com/dinky/docs/zh-CN/developer-guide/remote_debug/job_flinkwebui.png)
+![job_flinkwebui](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/job_flinkwebui.png)
 
 **查看是否同步到 Hive**
 
-![is_sync_hive_table](http://www.aiwenmo.com/dinky/docs/zh-CN/developer-guide/remote_debug/is_sync_hive_table.png)
+![is_sync_hive_table](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/is_sync_hive_table.png)
 
 **运维中心查看 JOB 提交状态**
 
-![job_davops_center](http://www.aiwenmo.com/dinky/docs/zh-CN/developer-guide/remote_debug/job_davops_center.png)
+![job_davops_center](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/job_davops_center.png)
 
 **运维中心查看 JOB 详情**
-![job_davops_center](http://www.aiwenmo.com/dinky/docs/zh-CN/developer-guide/remote_debug/devops_job_detail.png)
+![job_davops_center](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/devops_job_detail.png)
 
 
 **注意事项:** 如果拉取了新代码，远程调试环境一定要检查一遍，以防各种报错。
