@@ -198,7 +198,7 @@ insert into pt select 1 as ordertotal ,sum(order_number)*2 as numtotal from Orde
 ![weihu_jar](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/yarnsubmit/weihu_jar.png)
 
 右边作业配置的可执行 Jar 选择刚刚注册的 Jar 配置，保存后点击小火箭提交作业。
-(http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/yarnsubmit/flink_webui_show_data.png)
+
 ![execution_history](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/yarnsubmit/execution_history.png)
 
 由于提交了个批作业，Yarn 可以发现已经执行完成并销毁集群了。
