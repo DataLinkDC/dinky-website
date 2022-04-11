@@ -1,10 +1,13 @@
 ---
 sidebar_position: 2
-id: dinky-0.6.1
-title: Dinky-0.6.1
+title: 0.6.1 release
 ---
 
+### 当前稳定版本 0.6.1
 
+| 版本     | 二进制程序                                                                                                                   |   Source   |
+| ---------- |----------------------------------------------------------------------------------------------------------------------| ---- |
+| 0.6.1 | [dlink-release-0.6.1.tar.gz](https://github.com/DataLinkDC/dlink/releases/download/0.6.1/dlink-release-0.6.1.tar.gz) | [Source code (zip)](https://github.com/DataLinkDC/dlink/archive/refs/tags/0.6.1.zip) |
 
 
 ## Dinky发行说明
