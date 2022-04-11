@@ -17,11 +17,11 @@ Dlink 基于 Flink 源码二次开发，主要应用于 SQL 任务的管理与�
 
 ### Dlink  的原理
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dyicwnSlTFTo5cwuZy7GSLibw5J7Lx6cicx0vXaDHqn5VrrDJ9d3hcEicbEVO77NcP6bOylC9bOpuibM08JJ8bh8XQQ/0?wx_fmt=png)
+![dinky_principle](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/principle/dinky_principle.png)
 
 ### Dlink 的 FlinkSQL 执行原理
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dyicwnSlTFTqVImq5JvQzZ7oMqpnQ2NVHdmM6Pfib63atzoWNIqK7Ue6p9KfdibV889sOcZJ1Olw3kLHLmHZiab3Tg/0?wx_fmt=png)
+![execution_principle](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/principle/execution_principle.png)
 
 ### Connector 的扩展
 

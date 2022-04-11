@@ -4,27 +4,25 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '简单易用',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '易用性',
+    Svg: require('@site/static/img/ease_of_use.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+          用户只需要专注 FlinkSQL 的口径书写，并且可以实时进行检查与调试，在任务提交的过程则是快速的自动化托管，以实现一个 FlinkSQL 语句可以在所有的执行模式与外部集群上随意切换
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '易部署',
+    Svg: require('@site/static/img/easy_of_deploy.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+          用户只需要专注 FlinkSQL 的口径书写，并且可以实时进行检查与调试，在任务提交的过程则是快速的自动化托管，以实现一个 FlinkSQL 语句可以在所有的执行模式与外部集群上随意切换
       </>
     ),
   },
   {
-    title: '灵活扩展',
+    title: '易扩展',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
@@ -33,6 +31,35 @@ const FeatureList = [
       </>
     ),
   },
+    {
+        title: '沉侵式',
+        Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+        description: (
+            <>
+                提供了自动提示与补全、语法高亮、语句美化、语法校验和逻辑检查、调试预览结果、字段级血缘分析等专业的功能，使 FlinkSQL 的开发如同 SQL 开发一样舒适与简单
+            </>
+        ),
+    },
+    {
+        title: '一站式',
+        Svg: require('@site/static/img/one_stop.svg').default,
+        description: (
+            <>
+                Extend or customize your website layout by reusing React. Docusaurus can
+                be extended while reusing the same header and footer.
+            </>
+        ),
+    },
+    {
+        title: '无侵入',
+        Svg: require('@site/static/img/no_invasion.svg').default,
+        description: (
+            <>
+                Extend or customize your website layout by reusing React. Docusaurus can
+                be extended while reusing the same header and footer.
+            </>
+        ),
+    },
 ];
 
 function Feature({Svg, title, description}) {
@@ -53,6 +80,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <h1 style={{textAlign:"center"}}> Dinky  Core Features </h1><br/>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

@@ -33,7 +33,7 @@ HDFS的/flink/lib/
 
 3.依赖冲突
 
-![dependency_conflict](http://www.aiwenmo.com/dinky/docs/zh-CN/FAQ/dependency_conflict.png)
+![dependency_conflict](http://www.aiwenmo.com/dinky/docs/zh-CN/faq/dependency_conflict.png)
 
 **解决办法：**
 
@@ -47,7 +47,7 @@ HDFS的/flink/lib/
 异常信息 Caused by: java.lang.ClassNotFoundException: org.apache.http.client.HttpClient
 ```
 
-![hive_http_error](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/registerCenter/database_manager/hive_http_error.png)
+![hive_http_error](http://www.aiwenmo.com/dinky/docs/zh-CN/faq/hive_http_error.png)
 
 **解决办法:** 
 
