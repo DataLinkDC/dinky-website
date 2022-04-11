@@ -58,7 +58,7 @@ mvn clean package -Dmaven.test.skip=true
 
 ### 修改pom文件
 
-需要修改 dlink 根目录下的 pom 文件，将 provied  改为 complie，修改如下：
+需要修改 dlink 根目录下的 pom.xml 文件，将 **provied**  改为 **complie**，修改如下：
 
 ```
 <properties>
@@ -161,7 +161,7 @@ sa-token:
 根据 job 的场景自行选择插件依赖 jar, 选择需要的 jars , 右键添加为库,如下所示：
 
 - 选中 jars 添加为库
-![lib](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/jars_add_to_repo.jpg)
+![jars_add_to_repo](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/jars_add_to_repo.jpg)
 
 
 - 弹框中选择信息如图:
