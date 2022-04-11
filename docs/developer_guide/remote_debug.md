@@ -28,8 +28,8 @@ title: 远程调试
 | Flink | 1.13.5  |
 | Dinky | dev     |
 | Java  | 1.8_291 |
-| Node  | 7.19.1  |
-| npm  | 7.9.1   |
+| Node  | 14.17.0 |
+| npm  | 7.9.0   |
 | Lombok | IDEA 插件 |
 
 
