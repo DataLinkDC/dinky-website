@@ -1,11 +1,13 @@
 ---
 sidebar_position: 4
-id: dinky-0.5.1
-title: Dinky-0.5.1
+title: 0.5.1 release
 ---
 
+### 当前稳定版本 0.5.1
 
-
+| 版本   | 二进制程序                                                                                                                | Source                                                                               |
+|-------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| 0.5.1 | [dlink-release-0.5.1.tar.gz](https://github.com/DataLinkDC/dlink/releases/download/0.5.1/dlink-release-0.5.1.tar.gz) | [Source code (zip)](https://github.com/DataLinkDC/dlink/archive/refs/tags/0.5.1.zip) |
 
 
 ## Dinky发行说明
@@ -26,7 +28,7 @@ Dinky 0.5.1 是一个修复版本，其中包括针对前端问题（如优化SQ
 - 修复全屏开发退出后 sql 不同步
 - 优化作业配置查看及全屏开发按钮
 - 新增K8S集群配置
- 
+
 #### 后端
 - 增加dlink-client-hadoop 版本定制依赖
 - 优化pom及升级log4j至最新
