@@ -15,8 +15,8 @@ title: 致谢
 
 [SpringBoot](https://spring.io/projects/spring-boot)
 
-[docsify](https://github.com/docsifyjs/docsify/)
+[docusaurus]( https://github.com/facebook/docusaurus/)
 
 此外，感谢 [JetBrains](https://www.jetbrains.com/?from=dlink) 提供的免费开源 License 赞助
 
-[![JetBrains](http://www.aiwenmo.com/dinky/docs/zh-CN/others/thanks/jetbrains.svg)](https://www.jetbrains.com/?from=dlink)
+[![JetBrains](http://www.aiwenmo.com/dinky/docs/zh-CN/thanks/jetbrains.svg)](https://www.jetbrains.com/?from=dlink)

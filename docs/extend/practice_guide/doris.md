@@ -165,21 +165,21 @@ left join student b on a.sid = b.sid
 
 ## 调试
 
-### 在 Dlink 中提交
+### 在 Dinky 中提交
 
 本示例采用了 yarn-session 的方式进行提交。
-
-![image-20211218134246511](https://mmbiz.qpic.cn/mmbiz_png/dyicwnSlTFTp0RDozicic8lrYycianYsUN9ibG3QjNqVbMk7L41wHykKnkV0YxDCVSYj68HlFWylpYckkXicgnTDU7uQ/0?wx_fmt=png)
+http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide
+![dinky_submit](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/doris/dinky_submit.png)
 
 ### 	FlinkWebUI
 
-![image-20211218134439699](https://mmbiz.qpic.cn/mmbiz_png/dyicwnSlTFTp0RDozicic8lrYycianYsUN9ibn1jXbvKznaF8Tm4AxxvYYDI0fEtXbGm0XUeXhGp44KMlPdoOzjvtHQ/0?wx_fmt=png)
+![flink_webui](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/doris/flink_webui.png)
 
-上图可见，流任务已经成功被 Dlink 提交的远程集群了。
+上图可见，流任务已经成功被 Dinky 提交的远程集群了。
 
 ### Doris 查询
 
-![image-20211218135404787](https://mmbiz.qpic.cn/mmbiz_png/dyicwnSlTFTp0RDozicic8lrYycianYsUN9iblKTY6o9fWZxFDQYC19wKVFRGDuUBgNOZxm14sWjyr8tUY7RDeUiaEUw/0?wx_fmt=png)
+![doris_query](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/doris/doris_query.png)
 
 上图可见，Doris 已经被写入了历史全量数据。
 
@@ -193,7 +193,7 @@ INSERT INTO `score` VALUES (9, 3, 'english', 100);
 
 Doris 成功被追加：
 
-![image-20211218135545742](https://mmbiz.qpic.cn/mmbiz_png/dyicwnSlTFTp0RDozicic8lrYycianYsUN9ibvE4qyQ9ttf2kNZ3raEgabvh442HfiaIfm2l5dhdFmWoGiaHMlvcQmocw/0?wx_fmt=png)
+![doris_show_data_change](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/doris/doris_show_data_change.png)
 
 ### 变动测试
 
@@ -205,5 +205,4 @@ update score set score = 100 where cid = 1
 
 Doris 成功被修改：
 
-![image-20211218135949764](https://mmbiz.qpic.cn/mmbiz_png/dyicwnSlTFTp0RDozicic8lrYycianYsUN9ib3liaIvXQcCSboO4IoeJhtTRa38ukNogtFzwg31mNEFwRcJ1wGNIhQkQ/0?wx_fmt=png)
-
+![doris_show_data_change_again](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/doris/doris_show_data_change_again.png)

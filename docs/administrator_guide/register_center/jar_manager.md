@@ -12,9 +12,9 @@ title: Jar 管理
 
 **注册中心 > jar管理 > 新建 > 创建Jar配置**。
 
-![新建](http://www.aiwenmo.com/dinky/dev/docs/%E6%96%B0%E5%BB%BA.png)
+![create_jar](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/jar_manager/create_jar.png)
 
-![创建jar配置](http://www.aiwenmo.com/dinky/dev/docs/%E5%88%9B%E5%BB%BAjar%E9%85%8D%E7%BD%AE.png)
+![create_jar_config](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/jar_manager/create_jar_config.png)
 
 **参数配置说明：**
 
@@ -37,9 +37,9 @@ Jar 包配置完成后，创建 **FlinkJar** 任务，详见。
 
 首先进入**注册中心** > **jar管理**，点击**编辑**，即可对可执行Jar配置进行修改。
 
-![jar编辑](http://www.aiwenmo.com/dinky/dev/docs/jar%E7%BC%96%E8%BE%91.png)
+![jar_editing](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/jar_manager/jar_editing.png)
 
-![维护jar包配置](http://www.aiwenmo.com/dinky/dev/docs/%E7%BB%B4%E6%8A%A4jar%E5%8C%85%E9%85%8D%E7%BD%AE.png)
+![update_jar_config](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/jar_manager/update_jar_config.png)
 
 ## Jar删除
 
@@ -47,7 +47,7 @@ Jar 包配置完成后，创建 **FlinkJar** 任务，详见。
 
 首先进入**注册中心** > **jar管理**，点击**删除**，即可对可执行 Jar 配置进行删除。
 
-![jar配置删除](http://www.aiwenmo.com/dinky/dev/docs/jar%E9%85%8D%E7%BD%AE%E5%88%A0%E9%99%A4.png)
+![jar配置删除](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/jar_manager/jar_config_delete.png)
 
 ![删除jar](http://www.aiwenmo.com/dinky/dev/docs/%E5%88%A0%E9%99%A4jar.png)
 

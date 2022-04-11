@@ -183,13 +183,13 @@ npm start
 
 在IDEA启动后，等待几分钟，即可看到登录页，如下：
 
-![](http://www.aiwenmo.com/dinky/dev/docs/%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20220306224313.png)
+![login](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/local_debug/login.png)
 
 登录进去后，以配置数据源和查询数据源为例，观察IDEA的日志情况和dinky界面是否互通；
 
-![](http://www.aiwenmo.com/dinky/dev/docs/%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20220306224657.png)
+![test_database_is_success](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/local_debug/test_database_is_success.png)
 
-![](http://www.aiwenmo.com/dinky/dev/docs/%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20220306224756.png)
+![url_log](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/local_debug/url_log.png)
 
 如上，配置的数据源已经成功，IDEA日志也正常，这个时候就可以基于本地做二次开发或者贡献代码了。
 
