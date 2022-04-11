@@ -52,12 +52,8 @@ $ yarn build / npm run build
    - 将新添加的文档从 docs 复制到 versioned_docs 的新版本
    - 修改最后一个所有版本在 `/src/pages/version/index.js`
 
-   
-
-
-
-
-目录结构:
+  
+##文档目录结构
 ``` html
 blog --博客分享 
 docs --最新文档
