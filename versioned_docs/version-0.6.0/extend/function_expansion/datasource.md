@@ -80,7 +80,7 @@ eg:
          },
 ```
 如下图:
-![](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/datasource/extened_datasource_dbform.jpg)
+![](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/function_expansion/datasource/extened_datasource_dbform.jpg)
 
 注意: ``此处数据源类型遵照大驼峰命名规则``
 
@@ -96,7 +96,7 @@ eg:
       break;
 ```
 如下图:
-![](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/datasource/extened_datasource_datasourceform.jpg)
+![](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/function_expansion/datasource/extened_datasource_datasourceform.jpg)
    - 创建数据源相关表单属性在: `dlink-web/src/pages/DataBase/components/DataBaseForm.tsx`
 
 ----

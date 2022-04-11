@@ -56,10 +56,10 @@ ConnectRecord{topic='mysql_binlog_source.gmall.spu_info', kafkaPartition=null, k
 
 
 
-![image-20210615115042539](https://s4.ax1x.com/2022/01/29/HSLhNR.png)
+![see_debezium_document](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/cdc_kafka_multi_source_merge/see_debezium_document.png)
 
 
-![image-20210615115042539](https://s4.ax1x.com/2022/01/29/HSLfE9.png)
+![see_debezium_document_create_table](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/cdc_kafka_multi_source_merge/see_debezium_document_create_table.png)
 
 
 
@@ -71,7 +71,7 @@ ConnectRecord{topic='mysql_binlog_source.gmall.spu_info', kafkaPartition=null, k
 
 再往下翻文档：
 
-![image-20210615115042539](https://s4.ax1x.com/2022/01/29/HSLRHJ.png)
+![see_debezium_document_create_table_info](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/cdc_kafka_multi_source_merge/see_debezium_document_create_table_info.png)
 
 可以看到，基于 Debezium-json 格式，可以把上面的 schema 定义的 json 格式的元数据给取出来放在字段里。
 
@@ -300,7 +300,7 @@ PS：没放 schema{}这个对象，看文档说加了识别会影响效率。
 
 
 
-![image-20210615115042539](https://s4.ax1x.com/2022/01/29/HSL441.png)
+![kafka_consumer_info](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/cdc_kafka_multi_source_merge/kafka_consumer_info.png)
 
 
 # Dinky 里面进行建表，提交作业
@@ -309,8 +309,7 @@ PS：没放 schema{}这个对象，看文档说加了识别会影响效率。
 
 
 
-![image-20210615115042539](https://s4.ax1x.com/2022/01/29/HSL2B4.png)
-
+![dinky_create_kafka_table](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/cdc_kafka_multi_source_merge/dinky_create_kafka_table.png)
 PS：yarn-session 模式，记得开启预览结果和打印流，不然观察不到数据 changelog
 
 
@@ -320,25 +319,25 @@ PS：yarn-session 模式，记得开启预览结果和打印流，不然观察�
 
 
 
-![image-20210615115042539](https://s4.ax1x.com/2022/01/29/HSLI9x.png)
+![mysql_insert_one_data](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/cdc_kafka_multi_source_merge/mysql_insert_one_data.png)
 
-![image-20210615115042539](https://s4.ax1x.com/2022/01/29/HSLo36.png)
+![dinky_show_data](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/cdc_kafka_multi_source_merge/dinky_show_data.png)
 
 可以看到在指定库和表中新增一条数据，在下游 kafka 作业中实现了同步更新，然后试试对数据库该表的记录进行 delete，效果如下：
 
-![image-20210615115042539](https://s4.ax1x.com/2022/01/29/HSLTgK.png)
+![dinky_show_data_again](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/cdc_kafka_multi_source_merge/dinky_show_data_again.png)
 
 可以看到"是是是.."这条记录同步删除了。
 
 此时 Flink CDC 的记录是这样：
 
-![image-20210615115042539](https://s4.ax1x.com/2022/01/29/HSL7jO.png)
+![show_cdc_data](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/cdc_kafka_multi_source_merge/show_cdc_data.png)
 
 原理主要是 op 去同步下游 kafka 的 changeLog 里的 op
 
 我们浏览一下 changeLog：（Dinky 选中打印流即可）
 
-![image-20210615115042539](https://s4.ax1x.com/2022/01/29/HSLbuD.png)
+![print_streaming](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/practice_guide/cdc_kafka_multi_source_merge/print_streaming.png)
 
 可以看到，op 自动识别总线 kafka 发来的 JSON 进行了同步来记录操作。
 

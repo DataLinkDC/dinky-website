@@ -16,4 +16,4 @@ QQ社区群：**543709668**，申请备注 “ Dinky ”，不写不批
 - **微信搜索公众号:** `DataLink数据中台`
 - **扫码关注公众号:** 扫下图二维码，关注公众号
 
-![DataLink数据中台](http://www.aiwenmo.com/dinky/docs/zh-CN/others/comminicate/datalink.jpg)
+![DataLink数据中台](http://www.aiwenmo.com/dinky/docs/zh-CN/comminicate/datalink.jpg)

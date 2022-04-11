@@ -27,9 +27,9 @@ title: 集群管理
 
 **注册中心 > 集群管理 > 集群实例管理 > 新建**
 
-![cluster_manager_list](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/registerCenter/cluster_manager/cluster_manager_list.png)
+![cluster_manager_list](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_manager_list.png)
 
-![create_flink_cluster](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/registerCenter/cluster_manager/create_flink_cluster.png)
+![create_flink_cluster](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/create_flink_cluster.png)
 
 **参数配置说明：** 
 
@@ -41,11 +41,11 @@ title: 集群管理
 
 当集群实例配置完成后，点击**心跳**，会更新最新的集群实例信息
 
-![心跳检查](http://www.aiwenmo.com/dinky/dev/docs/%E5%BF%83%E8%B7%B3%E6%A3%80%E6%9F%A5.png)
+![heartbeat_check](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/heartbeat_check.png)
 
 点击**回收**，会将提交 Per-Job 和 Application 任务时自动注册且已经注销的集群实例进行回收
 
-![回收](http://www.aiwenmo.com/dinky/dev/docs/%E5%9B%9E%E6%94%B6.png)
+![recovery](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/recovery.png)
 
 **注意：** 心跳与回收需要手动触发
 
@@ -56,9 +56,11 @@ title: 集群管理
 
 首先进入 **注册中心 > 集群实例管理**，在列表中找到对应的集群实例，点击 **编辑**，编辑集群
 
-![集群实例编辑](http://www.aiwenmo.com/dinky/dev/docs/%E9%9B%86%E7%BE%A4%E5%AE%9E%E4%BE%8B%E7%BC%96%E8%BE%91.png)
 
-![编辑集群](http://www.aiwenmo.com/dinky/dev/docs/%E7%BC%96%E8%BE%91%E9%9B%86%E7%BE%A4.png)
+![cluster_instance_editing](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_instance_editing.png)
+
+
+![cluster_editing](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_editing.png)
 
 ### 集群实例删除
 
@@ -66,9 +68,9 @@ title: 集群管理
 
 首先进入 **注册中心 > 集群实例管理**，在列表中找到对应的集群实例，点击 **删除**，删除集群!
 
-![集群实例删除](http://www.aiwenmo.com/dinky/dev/docs/%E9%9B%86%E7%BE%A4%E5%AE%9E%E4%BE%8B%E5%88%A0%E9%99%A4.png)
+![cluster_instance_detele](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_instance_detele.png)
 
-![集群删除](http://www.aiwenmo.com/dinky/dev/docs/%E9%9B%86%E7%BE%A4%E5%88%A0%E9%99%A4.png)
+![cluster_editing](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_editing.png)
 
 ### 搜索
 
@@ -84,9 +86,9 @@ title: 集群管理
 
 首先进入**注册中心 > 集群管理 > 集群配置管理**，点击 **新建** 后，可以创建集群配置，参数配置完成后，点击 **测试** 及 **完成** 即可。
 
-![创建集群配置1](http://www.aiwenmo.com/dinky/dev/docs/%E5%88%9B%E5%BB%BA%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE1.png)
+![create_cluster_config_1](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/create_cluster_config_1.png)
 
-![创建集群配置2](http://www.aiwenmo.com/dinky/dev/docs/%E5%88%9B%E5%BB%BA%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE2.png)
+![create_cluster_config_2](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/create_cluster_config_2.png)
 
 **参数配置说明:**
 
@@ -108,7 +110,7 @@ title: 集群管理
 
 参数配置完成后，点击 **测试**，会显示测试连接成功。
 
-![集群测试](http://www.aiwenmo.com/dinky/dev/docs/%E9%9B%86%E7%BE%A4%E6%B5%8B%E8%AF%95.png)
+![cluster_test](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_test.png)
 
 待测试连接成功后，选择完成即可。至此集群配置成功，可连接远程集群进行作业提交。
 
@@ -118,9 +120,9 @@ title: 集群管理
 
 首先进入 **注册中心 > 集群配置管理**，在列表中找到对应的集群名称，点击 **编辑** 后，维护集群配置
 
-![集群配置编辑](http://www.aiwenmo.com/dinky/dev/docs/%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE%E7%BC%96%E8%BE%91.png)
+![cluster_config_editing](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_config_editing.png)
 
-![维护集群配置](http://www.aiwenmo.com/dinky/dev/docs/%E7%BB%B4%E6%8A%A4%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE.png)
+![update_cluster_configuration](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/update_cluster_configuration.png)
 
 ### 集群删除
 
@@ -128,9 +130,9 @@ title: 集群管理
 
 首先进入 **注册中心 > 集群配置管理**，在列表中找到对应的集群，点击 **删除** 后，删除集群
 
-![集群配置删除](http://www.aiwenmo.com/dinky/dev/docs/%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE%E5%88%A0%E9%99%A4.png)
+![cluster_config_delete](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_config_delete.png)
 
-![删除集群配置](http://www.aiwenmo.com/dinky/dev/docs/%E5%88%A0%E9%99%A4%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE.png)
+![删除集群配置](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/delete_cluster_config.png)
 
 ### 搜索
 

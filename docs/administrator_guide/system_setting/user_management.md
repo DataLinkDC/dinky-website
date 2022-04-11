@@ -13,7 +13,7 @@ title: 用户管理
 
 ## 用户管理
 
-![user_manager](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/system_setting/user_management/user_manager.png)
+![user_manager](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/system_setting/user_management/user_manager.png)
 
 ## 添加用户
 
@@ -23,7 +23,7 @@ title: 用户管理
 
 进入 **系统设置**，选择  **用户管理**，**新建**。
 
-![create_user](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/system_setting/user_management/create_user.png)
+![create_user](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/system_setting/user_management/create_user.png)
 
 
 **参数配置：**
@@ -38,9 +38,9 @@ title: 用户管理
 
 但用户不使用某个创建的普通用户时，可以进行删除。首先进入 **系统设置**，选择 **用户管理**，点击对应用户的**删除**即可。
 
-![delete_user](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/system_setting/user_management/delete_user.png)
+![delete_user](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/system_setting/user_management/delete_user.png)
 
-![delete_user_ok](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/system_setting/user_management/delete_user_ok.png)
+![delete_user_ok](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/system_setting/user_management/delete_user_ok.png)
 
 
 
@@ -50,7 +50,7 @@ title: 用户管理
 
 用户配置或者编辑是为了用户修改用户的基本信息，首先进入 **系统设置**，选择 **用户管理**，点击对应用户的**配置**或者**编辑**。接下来就可以维护用户信息。
 
-![update_user](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/system_setting/user_management/update_user.png)
+![update_user](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/system_setting/user_management/update_user.png)
 
 
 
@@ -61,19 +61,19 @@ title: 用户管理
 
 首先进入 **系统设置**，选择 **用户管理**，点击对应用户的密码修改即可。
 
-![update_passwd](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/system_setting/user_management/update_passwd.png)
+![update_passwd](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/system_setting/user_management/update_passwd.png)
 
-![update_passwd_ok](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/system_setting/user_management/update_passwd_ok.png)
+![update_passwd_ok](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/system_setting/user_management/update_passwd_ok.png)
 
 
 
 当密码修改成功后，用户可以选择界面**右上角**的**退出登录**,既可通过新密码登录 Dinky。
 
-![loginout](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/system_setting/user_management/loginout.png)
+![loginout](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/system_setting/user_management/loginout.png)
 
 
 
-![login](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator-guide/system_setting/user_management/login.png)
+![login](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/system_setting/user_management/login.png)
 
 
 

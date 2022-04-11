@@ -59,21 +59,21 @@ Dinky 实时数据中台数据开发模块包括 **数据开发**、**运维中�
 
 数据开发包括作业管理、作业配置和运维管理等
 
-![data_ops](http://www.aiwenmo.com/dinky/docs/zh-CN/dinky_overview/data_ops.png)
+![data_ops](http://www.aiwenmo.com/dinky/docs/zh-CN/overview/data_ops.png)
 
 
 
 
 ### 运维中心
 
-![devops_center](http://www.aiwenmo.com/dinky/docs/zh-CN/dinky_overview/devops_center.png)
+![devops_center](http://www.aiwenmo.com/dinky/docs/zh-CN/overview/devops_center.png)
 
 
 ### 注册中心
 
 注册中心包括集群管理、Jar管理、数据源管理、报警管理和文档管理
 
-![register_center](http://www.aiwenmo.com/dinky/docs/zh-CN/dinky_overview/register_center.png)
+![register_center](http://www.aiwenmo.com/dinky/docs/zh-CN/overview/register_center.png)
 
 
 
@@ -82,5 +82,5 @@ Dinky 实时数据中台数据开发模块包括 **数据开发**、**运维中�
 
 系统设置包括用户管理和Flink设置
 
-![system_settings](http://www.aiwenmo.com/dinky/docs/zh-CN/dinky_overview/system_settings.png)
+![system_settings](http://www.aiwenmo.com/dinky/docs/zh-CN/overview/system_settings.png)
 

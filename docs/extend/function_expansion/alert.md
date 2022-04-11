@@ -83,7 +83,7 @@ Dinky 学习了 ``Apache Dolphinscheduler`` 的插件扩展机制，可以在 Di
   ```
     - 注意: 此处属性值需要与后端 `static final String TYPE = "Email";`变量值保持一致
 如下图:
-![](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/alert/extend_alert_conf.png)
+![extend_alert_conf](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/function_expansion/alert/extend_alert_conf.png)
 
 
   - 修改 `dlink-web/src/pages/AlertInstance/icon.tsx` 的 **getAlertIcon** 中 添加如下:
@@ -102,7 +102,7 @@ export const DingTalkSvg = () => (
 **注意:** svg 相关代码中需要将 **width**  **height** 统一更换为 **width={svgSize} height={svgSize}**
 
 如下图:
-![](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/alert/extened_alert_icon.png)
+![extened_alert_icon](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/function_expansion/alert/extened_alert_icon.png)
 
 
 
@@ -129,7 +129,7 @@ export const DingTalkSvg = () => (
       }
 ```
 如下图:
-![](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/alert/extened_alert_choose_form.png)
+![extened_alert_choose_form](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/function_expansion/alert/extened_alert_choose_form.png)
 
  - 需要新建表单文件 , 命名规则: ``{告警类型}Form``
    - 该文件中除 **表单属性** 外 , 其余可参照其他类型告警 , 建议复制其他类型告警的表单 , 修改其中的表单属性即可 
