@@ -9,7 +9,6 @@
       "passVersionExplain": "在这里您可以找到以前发布的文档版本",
       "table": {
         "doc": "文档",
-        "release": "Release Note",
         "source": "源代码",
         "nextLink": "/docs/next/intro",
         "version": [
@@ -37,7 +36,6 @@
       "passVersionExplain": "Here you can find the previously published version of the document",
       "table": {
         "doc": "Document",
-        "release": "Release Note",
         "source": "Source Code",
         "nextLink": "/docs/next/intro",
         "version": [
