@@ -41,9 +41,6 @@ export default function() {
                             <a href={dataSource.table.version[0].link}>{dataSource.table.doc}</a>
                         </td>
                         <td>
-                            <a href={dataSource.table.version[0].releaseUrl}>{dataSource.table.release}</a>
-                        </td>
-                        <td>
                             <a href={"https://github.com/DataLinkDC/dlink/archive/refs/tags/"+dataSource.table.version[0].title+".zip"}>{dataSource.table.source}</a>
                         </td>
                     </tr>
@@ -68,9 +65,6 @@ export default function() {
                         <td>{dataSource.table.version[1].title}</td>
                         <td>
                             <a href={dataSource.table.version[1].link}>{dataSource.table.doc}</a>
-                        </td>
-                        <td>
-                            <a href={dataSource.table.version[1].releaseUrl}>{dataSource.table.release}</a>
                         </td>
                         <td>
                         <a href= {"https://github.com/DataLinkDC/dlink/archive/refs/tags/"+dataSource.table.version[0].title+".zip"}>{dataSource.table.source}</a>
