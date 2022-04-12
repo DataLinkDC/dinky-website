@@ -36,7 +36,7 @@ Flink SQL 支持丰富的 Connector，实时计算平台支持支持 Flink 1.11�
 
 - [Hudi](https://github.com/apache/hudi/releases)
 - [Iceberg](https://github.com/apache/iceberg/releases)
-- [Doris:](https://github.com/apache/incubator-doris-flink-connector/tags)
+- [Doris](https://github.com/apache/incubator-doris-flink-connector/tags)
 - [Starrocks](https://github.com/StarRocks/flink-connector-starrocks/releases)
 - ClickHouse
 - [Pulsar](https://github.com/streamnative/pulsar-flink/releases)
