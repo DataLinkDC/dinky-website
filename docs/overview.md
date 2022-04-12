@@ -16,13 +16,13 @@ Dinky 做为 FlinkSQL 的实时计算平台目前可以被部署在本地。充�
 
 [Apache Flink](https://github.com/apache/flink)是 Apache 社区的先进开源项目，主攻流计算领域，具备高吞吐，低延时的特点，已经成为了目前流式处理领域的热门引擎。主要应用功能包括流批一体化及湖仓一体化的建设。
 
-Dinky做为实时数据中台，当前也支持各种数据源连接。
+Dinky 做为实时数据中台，当前也支持各种数据源连接。
 
 ## 支持上下游系统
 
-### FlinkSQL上下游系统
+### FlinkSQL Connector
 
-Flink SQL 支持丰富的上下游存储，实时计算平台支持支持 Flink 1.11、Flink 1.12、Flink 1.13 和 Flink 1.14 四个版本，对应的版本支持所有开源的上下游存储详见具体Connector信息，请参见Flink开源社区：
+Flink SQL 支持丰富的 Connector，实时计算平台支持支持 Flink 1.11、Flink 1.12、Flink 1.13 和 Flink 1.14 四个版本，对应的版本支持所有开源的上下游存储详见具体Connector信息，请参见Flink开源社区：
 
 - [Flink1.11](https://nightlies.apache.org/flink/flink-docs-release-1.11/dev/table/connectors/)
 
@@ -30,15 +30,15 @@ Flink SQL 支持丰富的上下游存储，实时计算平台支持支持 Flink 
 - [Flink1.13](https://nightlies.apache.org/flink/flink-docs-release-1.13/docs/connectors/table/overview/)
 - [Flink1.14](https://nightlies.apache.org/flink/flink-docs-release-1.14/docs/connectors/table/overview/)
 
-另外非 Flink 官网支持的上下游系统详见 github：
+另外非 Flink 官网支持的 Connector 详见 github：
 
 - [Flink-CDC](https://github.com/ververica/flink-cdc-connectors/releases/)
 
 - [Hudi](https://github.com/apache/hudi/releases)
 - [Iceberg](https://github.com/apache/iceberg/releases)
-- [Doris:](https://github.com/apache/incubator-doris-flink-connector/tags) 目前只支持 sink
+- [Doris](https://github.com/apache/incubator-doris-flink-connector/tags)
 - [Starrocks](https://github.com/StarRocks/flink-connector-starrocks/releases)
-- [ClickHouse]
+- ClickHouse
 - [Pulsar](https://github.com/streamnative/pulsar-flink/releases)
 
 ### 其他数据源

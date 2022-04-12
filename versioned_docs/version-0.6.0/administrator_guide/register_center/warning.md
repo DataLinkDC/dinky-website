@@ -29,7 +29,7 @@ title: 报警管理
 ### 创建告警实例
 **注册中心** > **报警管理**，选择**新建**
 
-![create_alert_instance](http://www.aiwenmo.com/dinky/docs/zh-CN/**administrator_guide/register_center**/warning/create_alert_instance.png)
+![create_alert_instance](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/warning/create_alert_instance.png)
 
 点击以上告警实例类型,创建报警实例配置。报警实例配置完成，就可以创建报警组。
 
