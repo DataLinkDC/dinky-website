@@ -3,8 +3,6 @@ sidebar_position: 3
 title: 0.6.0 release
 ---
 
-### 当前稳定版本 0.6.0
-
 | 版本   | 二进制程序                                                                                                                | Source                                                                               |
 |-------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 0.6.0 | [dlink-release-0.6.0.tar.gz](https://github.com/DataLinkDC/dlink/releases/download/0.6.0/dlink-release-0.6.0.tar.gz) | [Source code (zip)](https://github.com/DataLinkDC/dlink/archive/refs/tags/0.6.0.zip) |
