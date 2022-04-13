@@ -32,6 +32,16 @@ title: 远程调试
 | npm  | 7.9.0   |
 | Lombok | IDEA 插件 |
 
+# 下载 Dinky
+
+```bash
+git clone https://github.com/DataLinkDC/dlink.git
+
+# 如需本地调试开发 请使用 dev 分支
+# 进入到 dlink 源码目录
+git checkout dev
+```
+
 
 ## 编译
 
@@ -169,8 +179,8 @@ sa-token:
   - 级别: 项目库
   - 添加到模块: dlink-admin
 
-![choose_addrepo_global](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/choose_addrepo_global.jpg)   
-![choose_addrepo_global](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/create_repo.png)
+![choose_addrepo_global](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/choose_addrepo_global.png)   
+![create_repo](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/create_repo.png)
 
 
 ### 启动 Yarn Session 集群
@@ -181,13 +191,20 @@ yarn-session.sh -n 2 -jm 1024 -tm 4096 -s 6 -d
 
 ### 启动 Dinky 服务
 
-启动 dlink-admin 下的 Dlink 启动类，可见 8888 端口。
+#### 方式一
 
-等待几分钟，访问 127.0.0.1:8888 可见登录页。
+- 直接启动 dlink-admin 下的 Dlink 启动类，可见 8888 端口。
+- **访问:** 127.0.0.1:8888
+- **账户密码:** admin/admin
 
-输入 admin/admin 登录。
+#### 方式二
 
-**说明：** 在 Dinky-0.6 版本后，不需要额外启动前端，启动后端便可访问 `127.0.0.1:8888`  如需启动前端: 进入到 **dlink-web** 执行 **npm start** 访问 **localhost:8000**
+- 启动 dlink-admin 下的 Dlink 启动类
+- 进入到 **dlink-web** 执行 **npm start**
+- **访问:** 127.0.0.1:8000
+- **账户密码:** admin/admin
+
+**说明：** 在 Dinky-0.6 版本后，不需要额外启动前端，如需进行前后端联调,可参照[方式二](./remote_debug#方式二)
 
 
 
