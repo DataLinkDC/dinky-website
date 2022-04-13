@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 15
 id: comminicate
 title: 交流与贡献
 ---
