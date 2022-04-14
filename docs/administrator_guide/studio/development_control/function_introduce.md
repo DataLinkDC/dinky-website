@@ -1,27 +1,10 @@
 ---
 sidebar_position: 1
 id: function_introduce
-title: 功能介绍
+title: 功能一览
 ---
 
 
 
 
-Data Studio 提供了 Apache Flink 及其他 DBSQL 的开发、提交和运维能力。
-
-## 作业管理
-
-创建目录、创建作业等，详情请参考[作业管理](../job_ops/job_manage)
-
-## 作业开发
-
-开发作业、检查语法、发布作业等，详情请参考[作业开发](../job_dev/flinksql_guide/flinksql_job_dev)
-
-## 运维管理
-
-配置作业信息、保存savepoint等，详情请参考[运维管理]
-
-## 作业监控
-
-查看作业信息、作业进程、作业历史等，详情请参考[作业监控]
-
+通过查阅功能一览，您可以了解到数据开发中每个功能的含义。这有助于您更好的使用 Dinky 的数据开发功能。
