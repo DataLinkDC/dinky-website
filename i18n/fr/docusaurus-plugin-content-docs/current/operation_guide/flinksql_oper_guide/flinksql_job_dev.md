@@ -50,8 +50,8 @@ CREATE  TABLE blackhole_sink(
 --将源表数据插入到结果表
 INSERT INTO blackhole_sink
 SELECT
-   id  BIGINT,
-   name STRING
+   id  ,
+   name 
 from datagen_source;
 ```
 
