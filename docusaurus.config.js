@@ -9,19 +9,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Dinky',  //网站标题
-  tagline: 'Dinky 为 Apache Flink 而生，让 Flink SQL 纵享丝滑', // 网站标语
-  url: 'http://www.dlink.top/', // 网站网址
-  baseUrl: '/', // 站点的相对路径 可将其视为是主机名后的路径
-  staticDirectories: ['static/img'], // 静态文件目录
-  trailingSlash: true, //此选项允许您自定义 URL/链接后是否添加结尾斜杠
-  onBrokenLinks: 'ignore', // Docusaurus 在检测到无效链接时的行为  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
-  onBrokenMarkdownLinks: 'warn', // Docusaurus 在检测到无效 Markdown 链接时的行为  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
-  onDuplicateRoutes: 'warn', // Docusaurus 在检测到重复的路由时的行为  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
-  favicon: 'img/side_dinky.svg', // 左侧logo
-  organizationName: 'DataLinkDC', // 拥有此源的 GitHub 用户或组织。 用于部署命令。
-  projectName: 'dinky-website', // GitHub 源的名称。 用于部署命令。
-  deploymentBranch: 'main', // GitHub Pages 的部署分支。 用于部署命令。
+  title: 'Dinky',  //网站标题 | Site title
+  tagline: 'Dinky 为 Apache Flink 而生，让 Flink SQL 纵享丝滑', // 网站标语 | Tagline for your website
+  url: 'http://www.dlink.top/', // 网站网址 | Your website's URL
+  baseUrl: '/', // 站点的相对路径 可将其视为是主机名后的路径 | Path to your website
+  staticDirectories: ['static/img'], // 静态文件目录 | Path to static files
+  trailingSlash: true, //此选项允许您自定义 URL/链接后是否添加结尾斜杠 | Whether to append a trailing slash to the URL when rendering URLs
+  onBrokenLinks: 'ignore', // Docusaurus 在检测到无效链接时的行为 |  Docusaurus behavior when invalid links are detected    -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw' |
+  onBrokenMarkdownLinks: 'warn', // Docusaurus 在检测到无效 Markdown 链接时的行为 | Docusaurus behavior when detecting invalid markdown links  -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
+  onDuplicateRoutes: 'warn', // Docusaurus 在检测到重复的路由时的行为 |  Behavior of docusaurus when duplicate routes are detected  ->  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
+  favicon: 'img/side_dinky.svg', // 左侧logo  | left logo
+  organizationName: 'DataLinkDC', // 拥有此源的 GitHub 用户或组织。 用于部署命令。 |  The GitHub user or organization that owns this source. Command for deployment.
+  projectName: 'dinky-website', // GitHub 源的名称。 用于部署命令。 | The name of the GitHub repository. Command for deployment.
+  deploymentBranch: 'main', // GitHub Pages 的部署分支。 用于部署命令。 | The branch to deploy to GitHub Pages. Command for deployment.
   i18n: {
     defaultLocale: 'zh-cn',
     locales: ['zh-cn'],
