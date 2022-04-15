@@ -10,8 +10,9 @@ export default function() {
     const [p1Animation, setP1Animation] = useState(false);
     const [p2Animation, setP2Animation] = useState(false);
 
-   const language = isBrowser && location.pathname.indexOf('/en/') === 0 ? 'en': 'zh-Hans';
+    const language = isBrowser && location.pathname.indexOf('/en') == 0 ? 'en': 'zh-cn';
     const dataSource = config?.[language];
+
 
     return (
         <Layout>

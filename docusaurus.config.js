@@ -20,13 +20,13 @@ const config = {
   onDuplicateRoutes: 'warn', // Docusaurus 在检测到重复的路由时的行为  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
   favicon: 'img/side_dinky.svg',
   organizationName: 'DataLinkDC', // 拥有此源的 GitHub 用户或组织。 用于部署命令。
-  projectName: 'dinky', // GitHub 源的名称。 用于部署命令。
+  projectName: 'dinky-website', // GitHub 源的名称。 用于部署命令。
   deploymentBranch: 'main', // GitHub Pages 的部署分支。 用于部署命令。
   i18n: {
     defaultLocale: 'zh-cn',
-    locales: ['zh-cn','en'],
+    locales: ['zh-cn'],
     // localeConfigs: {
-    //  'zh-Hans': {
+    //  'zh-cn': {
     //    label: "简体中文",
     //    direction: 'ltr',
     //  },
@@ -46,7 +46,7 @@ const config = {
           sidebarCollapsible: true,
           // Please change this to your repo.
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
-            if (locale !== 'zh-Hans') {
+            if (locale !== 'zh-cn') {
               return `https://github.com/DataLinkDC/dinky-website/tree/master/i18n/${locale}/${docPath}`;
             }
             return `https://github.com/DataLinkDC/dinky-website/tree/master/${versionDocsDirPath}/${docPath}`;
@@ -117,7 +117,7 @@ const config = {
             activeBaseRegex: `/download/`,
           },
           {
-            to: '/docs/Next/developer_guide/debug',
+            to: '/docs/next/developer_guide/debug',
             position: 'right',
             label: '开发者指南',
             items: [
@@ -219,7 +219,7 @@ const config = {
           path: 'download',
           routeBasePath: 'download',
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
-            if (locale !== 'zh-Hans') {
+            if (locale !== 'zh-cn') {
               return `https://github.com/DataLinkDC/dinky-website/tree/master/i18n/${locale}/${docPath}`;
             }
             return `https://github.com/DataLinkDC/dinky-website/tree/master/${versionDocsDirPath}/${docPath}`;
