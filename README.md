@@ -15,7 +15,7 @@ $ yarn / npm i
 ### 本地启动
 
 ```
-$ yarn start /  npx docusaurus start [--port 3111 ] [--host localhost ] 默认端口为 3000
+$ yarn start / npm run start / npx docusaurus start [--port 3111 ] [--host localhost ] 默认端口为 3000
 ```
 
 此命令启动本地开发服务器并打开浏览器窗口。大多数更改都会实时预览，而无需重新启动服务器。
@@ -43,12 +43,12 @@ $ yarn build / npm run build
 ### 为文档添加新文章
 
   - 在 docs 下添加新的 `.md` 文件
-  - 在本地运行 server 验证文章是否正确显示
+  - 在本地运行 serve 验证文章是否正确显示
   - 发送拉取的请求包含 `*.md`
   
 ### 为文档添加新版本
 
-   - 修改 docs 中的文档，然后在本地运行 `yarn start`或者 `npx docusaurus start`
+   - 修改 docs 中的文档，然后在本地运行 `yarn start`或者 `npm run start`
    - 将新添加的文档从 docs 复制到 versioned_docs 的新版本
    - 修改最后一个所有版本在 `/src/pages/version/index.js`
 
@@ -58,6 +58,7 @@ $ yarn build / npm run build
 blog --博客分享 
 docs --最新文档
 download --下载
+i18n -- 国际化
 src --源码
   - components --组件
       - HomepageFeature --首页特性
