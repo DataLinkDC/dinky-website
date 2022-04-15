@@ -13,18 +13,19 @@ const config = {
   tagline: 'Dinky 为 Apache Flink 而生，让 Flink SQL 纵享丝滑', // 网站标语
   url: 'http://www.dlink.top/', // 网站网址
   baseUrl: '/', // 站点的相对路径 可将其视为是主机名后的路径
-  staticDirectories: ['static'], // 静态文件目录
+  staticDirectories: ['static/img'], // 静态文件目录
   trailingSlash: true, //此选项允许您自定义 URL/链接后是否添加结尾斜杠
   onBrokenLinks: 'ignore', // Docusaurus 在检测到无效链接时的行为  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
   onBrokenMarkdownLinks: 'warn', // Docusaurus 在检测到无效 Markdown 链接时的行为  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
   onDuplicateRoutes: 'warn', // Docusaurus 在检测到重复的路由时的行为  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
-  favicon: 'img/side_dinky.svg',
+  favicon: 'img/side_dinky.svg', // 左侧logo
   organizationName: 'DataLinkDC', // 拥有此源的 GitHub 用户或组织。 用于部署命令。
   projectName: 'dinky-website', // GitHub 源的名称。 用于部署命令。
   deploymentBranch: 'main', // GitHub Pages 的部署分支。 用于部署命令。
   i18n: {
     defaultLocale: 'zh-cn',
     locales: ['zh-cn'],
+    // locales: ['zh-cn','en'],
     // localeConfigs: {
     //  'zh-cn': {
     //    label: "简体中文",
