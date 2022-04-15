@@ -166,6 +166,6 @@ title: 报警管理
     
     
 
-:::warning:
+:::warning
   当前告警管理只适用于 FlinkSQL
 :::
