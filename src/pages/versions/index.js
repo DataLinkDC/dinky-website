@@ -1,6 +1,5 @@
 import React, { useState }  from 'react';
 import useIsBrowser from '@docusaurus/useIsBrowser';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import config from "../versions/config.json";
 import Layout from '@theme/Layout';
 import './index.less';
@@ -11,7 +10,7 @@ export default function() {
     const [p1Animation, setP1Animation] = useState(false);
     const [p2Animation, setP2Animation] = useState(false);
 
-    const language = isBrowser && location.pathname.indexOf('/en/') === 0 ? 'en': 'zh-Hans';
+   const language = isBrowser && location.pathname.indexOf('/en/') === 0 ? 'en': 'zh-Hans';
     const dataSource = config?.[language];
 
     return (
