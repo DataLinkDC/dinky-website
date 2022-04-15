@@ -14,18 +14,6 @@ export default function() {
     const language = isBrowser && location.pathname.indexOf('/en/') === 0 ? 'en': 'zh-Hans';
     const dataSource = config?.[language];
 
-
-    const getTableList = (dataSource) => {
-        let list=null
-
-        if(dataSource.table.size !== 0){
-
-        }
-
-        return list
-    }
-
-
     return (
         <Layout>
             <div className="div-one"><br/>
