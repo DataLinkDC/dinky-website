@@ -9,28 +9,33 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Dinky',
-  tagline: 'Dinky 为 Apache Flink 而生，让 Flink SQL 纵享丝滑',
-  url: 'http://www.dlink.top/',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/side_dinky.svg',
-  organizationName: 'DataLinkDC', // Usually your GitHub org/user name.
-  projectName: 'dinky', // Usually your repo name.
+  title: 'Dinky',  //网站标题 | Site title
+  tagline: 'Dinky 为 Apache Flink 而生，让 Flink SQL 纵享丝滑', // 网站标语 | Tagline for your website
+  url: 'http://www.dlink.top/', // 网站网址 | Your website's URL
+  baseUrl: '/', // 站点的相对路径 可将其视为是主机名后的路径 | Path to your website
+  staticDirectories: ['static/img'], // 静态文件目录 | Path to static files
+  trailingSlash: true, //此选项允许您自定义 URL/链接后是否添加结尾斜杠 | Whether to append a trailing slash to the URL when rendering URLs
+  onBrokenLinks: 'ignore', // Docusaurus 在检测到无效链接时的行为 |  Docusaurus behavior when invalid links are detected    -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw' |
+  onBrokenMarkdownLinks: 'warn', // Docusaurus 在检测到无效 Markdown 链接时的行为 | Docusaurus behavior when detecting invalid markdown links  -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
+  onDuplicateRoutes: 'warn', // Docusaurus 在检测到重复的路由时的行为 |  Behavior of docusaurus when duplicate routes are detected  ->  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
+  favicon: 'img/side_dinky.svg', // 左侧logo  | left logo
+  organizationName: 'DataLinkDC', // 拥有此源的 GitHub 用户或组织。 用于部署命令。 |  The GitHub user or organization that owns this source. Command for deployment.
+  projectName: 'dinky-website', // GitHub 源的名称。 用于部署命令。 | The name of the GitHub repository. Command for deployment.
+  deploymentBranch: 'main', // GitHub Pages 的部署分支。 用于部署命令。 | The branch to deploy to GitHub Pages. Command for deployment.
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
-    localeConfigs: {
-     'zh-Hans': {
-       label: "简体中文",
-       direction: 'ltr',
-     },
+    defaultLocale: 'zh-cn',
+    locales: ['zh-cn'],
+    // locales: ['zh-cn','en'],
+    // localeConfigs: {
+    //  'zh-cn': {
+    //    label: "简体中文",
+    //    direction: 'ltr',
+    //  },
     //  'en': {
     //    label: "English",
     //    direction: 'ltr',
     //  },
-    },
+    // },
   },
   presets: [
     [
@@ -42,7 +47,7 @@ const config = {
           sidebarCollapsible: true,
           // Please change this to your repo.
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
-            if (locale !== 'zh-Hans') {
+            if (locale !== 'zh-cn') {
               return `https://github.com/DataLinkDC/dinky-website/tree/master/i18n/${locale}/${docPath}`;
             }
             return `https://github.com/DataLinkDC/dinky-website/tree/master/${versionDocsDirPath}/${docPath}`;
@@ -113,7 +118,7 @@ const config = {
             activeBaseRegex: `/download/`,
           },
           {
-            to: '/docs/Next/developer_guide/debug',
+            to: '/docs/next/developer_guide/debug',
             position: 'right',
             label: '开发者指南',
             items: [
@@ -215,7 +220,7 @@ const config = {
           path: 'download',
           routeBasePath: 'download',
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
-            if (locale !== 'zh-Hans') {
+            if (locale !== 'zh-cn') {
               return `https://github.com/DataLinkDC/dinky-website/tree/master/i18n/${locale}/${docPath}`;
             }
             return `https://github.com/DataLinkDC/dinky-website/tree/master/${versionDocsDirPath}/${docPath}`;
