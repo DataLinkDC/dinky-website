@@ -17,7 +17,7 @@
 
 name: Bug report
 title: "[Bug]  Bug title "
-description: Problems and issues with code of Dinky
+description: Problems and issues with code of Dinky-website
 labels: [ "bug" ]
 body:
   - type: markdown
