@@ -37,3 +37,53 @@
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.structure .image img{
+  width:90%;
+  margin-left: 2rem;
+  margin-right:2rem;
+}
+.structure .text{
+  width:50%;
+  font-family: PingFangSC-Medium;
+  text-align:left ;
+}
+.title {
+  margin-top: 50px;
+  color: #0e0e0e;
+  text-align:left;
+  font-size:1.9rem;
+  font-family:PingFangSC-Medium
+}
+.sub-title {
+  width:100%;
+  text-align:left;
+  font-family:PingFangSC-Light;
+  font-size:1.3rem;
+  color: #0a0a0a;
+  padding:0;
+  line-height:1.8rem
+}
+.description {
+  width:100%;
+  margin:0 auto;
+  font-size:1.4rem;
+  color: #030303;
+  opacity:.6;
+  padding:1.3rem 0 0
+}
+.action-button {
+  margin-top:2rem;
+  display:inline-block;
+  font-size:1rem;
+  color:#5169ac;
+  border:1px solid #5169ac;
+  padding:.4rem 2.8rem;
+  transition:background-color .1s ease;
+  box-sizing:border-box;
+}
+.action-button:hover {
+  color:#fff;
+  background-color:#5169ac;
+  text-decoration:none;
+}

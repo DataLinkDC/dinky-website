@@ -27,7 +27,7 @@ const FeatureList = [
           Svg: require('@site/static/img/one_stop.svg').default,
           description: (
               <>
-                  提供从FlinkSQL开发调试到作业上线下线的运维监控及OLAP的即席查询，使数仓建设及数据治理一体化。
+                  提供从 FlinkSQL 开发调试到作业上线下线的运维监控及 OLAP 的即席查询，使数仓建设及数据治理一体化。
               </>
           ),
       },
@@ -45,7 +45,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        SPI插件化机制支持用户自定义扩展新功能，如数据源、报警方式、自定义语法等
+        SPI 插件化机制支持用户自定义扩展新功能，如数据源、报警方式、自定义语法等
       </>
     ),
   },
@@ -54,7 +54,7 @@ const FeatureList = [
         Svg: require('@site/static/img/no_invasion.svg').default,
         description: (
             <>
-               不需要在任何 flink 集群修改源码或添加插件，无感知连接和监控 Flink 集群
+               不需要在任何 Flink 集群修改源码或添加插件，无感知连接和监控 Flink 集群
             </>
         ),
     },

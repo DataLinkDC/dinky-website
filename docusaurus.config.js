@@ -1,15 +1,13 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
 const path = require('path');
 const versions = require('./versions.json');
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Dinky',  //网站标题 | Site title
+  title: '欢迎使用 Dinky',  //网站标题 | Site title
   tagline: 'Dinky 为 Apache Flink 而生，让 Flink SQL 纵享丝滑', // 网站标语 | Tagline for your website
   url: 'http://www.dlink.top/', // 网站网址 | Your website's URL
   baseUrl: '/', // 站点的相对路径 可将其视为是主机名后的路径 | Path to your website
@@ -18,10 +16,16 @@ const config = {
   onBrokenLinks: 'ignore', // Docusaurus 在检测到无效链接时的行为 |  Docusaurus behavior when invalid links are detected    -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw' |
   onBrokenMarkdownLinks: 'warn', // Docusaurus 在检测到无效 Markdown 链接时的行为 | Docusaurus behavior when detecting invalid markdown links  -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
   onDuplicateRoutes: 'warn', // Docusaurus 在检测到重复的路由时的行为 |  Behavior of docusaurus when duplicate routes are detected  ->  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
-  favicon: 'img/side_dinky.svg', // 左侧logo  | left logo
+  favicon: '/static/img/side_dinky.svg', // 左侧logo  | left logo
   organizationName: 'DataLinkDC', // 拥有此源的 GitHub 用户或组织。 用于部署命令。 |  The GitHub user or organization that owns this source. Command for deployment.
   projectName: 'dinky-website', // GitHub 源的名称。 用于部署命令。 | The name of the GitHub repository. Command for deployment.
   deploymentBranch: 'main', // GitHub Pages 的部署分支。 用于部署命令。 | The branch to deploy to GitHub Pages. Command for deployment.
+  customFields:{ // 自定义字段 | Custom fields
+    structTitle: 'Dinky',
+    structSubTitle: 'Dinky 为 Apache Flink 而生，让 Flink SQL 纵享丝滑',
+    // structDescription: custom_fields.structDesc(),
+    learningMore:'https://space.bilibili.com/366484959/video'
+  },
   i18n: {
     defaultLocale: 'zh-cn',
     locales: ['zh-cn'],
