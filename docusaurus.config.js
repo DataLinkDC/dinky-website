@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '欢迎使用 Dinky',  //网站标题 | Site title
+  title: 'Dinky',  //网站标题 | Site title
   tagline: 'Dinky 为 Apache Flink 而生，让 Flink SQL 纵享丝滑', // 网站标语 | Tagline for your website
   url: 'http://www.dlink.top/', // 网站网址 | Your website's URL
   baseUrl: '/', // 站点的相对路径 可将其视为是主机名后的路径 | Path to your website
