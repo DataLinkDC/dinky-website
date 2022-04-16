@@ -1,9 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
 const path = require('path');
 const versions = require('./versions.json');
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -18,10 +16,16 @@ const config = {
   onBrokenLinks: 'ignore', // Docusaurus 在检测到无效链接时的行为 |  Docusaurus behavior when invalid links are detected    -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw' |
   onBrokenMarkdownLinks: 'warn', // Docusaurus 在检测到无效 Markdown 链接时的行为 | Docusaurus behavior when detecting invalid markdown links  -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
   onDuplicateRoutes: 'warn', // Docusaurus 在检测到重复的路由时的行为 |  Behavior of docusaurus when duplicate routes are detected  ->  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
-  favicon: 'img/side_dinky.svg', // 左侧logo  | left logo
+  favicon: 'side_dinky.svg', // 左侧logo  | left logo
   organizationName: 'DataLinkDC', // 拥有此源的 GitHub 用户或组织。 用于部署命令。 |  The GitHub user or organization that owns this source. Command for deployment.
   projectName: 'dinky-website', // GitHub 源的名称。 用于部署命令。 | The name of the GitHub repository. Command for deployment.
   deploymentBranch: 'main', // GitHub Pages 的部署分支。 用于部署命令。 | The branch to deploy to GitHub Pages. Command for deployment.
+  customFields:{ // 自定义字段 | Custom fields
+    structTitle: 'Dinky',
+    structSubTitle: 'Dinky 为 Apache Flink 而生，让 Flink SQL 纵享丝滑',
+    // structDescription: custom_fields.structDesc(),
+    learningMore:'https://space.bilibili.com/366484959/video'
+  },
   i18n: {
     defaultLocale: 'zh-cn',
     locales: ['zh-cn'],
@@ -73,12 +77,16 @@ const config = {
             id: 'announcementBar-2', // Increment on change
             content: `⭐️ &nbsp; If you like Dinky , give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/DataLinkDC/dlink">GitHub</a>`,
             backgroundColor: "#BBDFFF",
+            isCloseable: false,
           },
+      hideOnScroll: false, // 滚动时是否隐藏 | Whether to hide the sidebar on scroll
+      hideableSidebar: true, // 是否隐藏侧边栏 | Whether to hide the sidebar in mobile
+      autoCollapseSidebarCategories: true, // 点击另一个分类时自动折叠当前分类 | Click another category will automatically collapse the current category
       navbar: {
         title: 'Dinky',
         logo: {
           alt: 'Dinky',
-          src: 'img/side_dinky.svg',
+          src: 'side_dinky.svg',
         },
        items: [
           {
@@ -192,7 +200,7 @@ const config = {
                 href: 'https://github.com/DataLinkDC/dlink',
               },
               // {
-              //   label: '用户案例',
+              //   label: '最新动态',
               //   to: '/blog',
               // },
             ],
@@ -200,7 +208,7 @@ const config = {
         ],
         logo: {
           alt: 'Dinky',
-          src: 'img/side_dinky.svg',
+          src: 'side_dinky.svg',
           width: 100,
           height: 30,
         },
@@ -225,7 +233,7 @@ const config = {
             }
             return `https://github.com/DataLinkDC/dinky-website/tree/master/${versionDocsDirPath}/${docPath}`;
           },
-          sidebarPath: require.resolve('./sidebarsDevelopment.js'),
+          sidebarPath: require.resolve('./sidebars.js'),
         },
       ],
     ]

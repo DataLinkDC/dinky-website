@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://www.dlink.top/blog</id>
-    <title>Dinky Blog</title>
+    <title>欢迎使用 Dinky Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://www.dlink.top/blog"/>
-    <subtitle>Dinky Blog</subtitle>
+    <subtitle>欢迎使用 Dinky Blog</subtitle>
     <icon>http://www.dlink.top/img/side_dinky.svg</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>

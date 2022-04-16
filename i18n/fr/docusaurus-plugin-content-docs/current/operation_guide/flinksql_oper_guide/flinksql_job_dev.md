@@ -19,7 +19,7 @@ title: 作业开发
 
 2.在左侧菜单栏，右键 **目录**
 
-3.新建目录或作业，请参考作业运维中的 **[作业管理](../../../studio/job_ops/job_manage)**
+3.新建目录或作业，请参考作业运维中的 **[作业管理](../../administrator_guide/devops_center/job_manage/job_instance_status)**
 
 4.在新建文件的对话框，填写作业信息
 
@@ -63,16 +63,16 @@ from datagen_source;
 
 |  类型  | 配置项          | 备注                                                                                                                       |
 |:----:|:-------------|:-------------------------------------------------------------------------------------------------------------------------|
-| 作业配置 | 执行模式         | 区别请参考:[作业概述](../job_hosting)                                                                                          |
-| 作业配置 | 集群实例         | Standalone 和 Session 执行模式需要选择集群实例，请参考：[集群实例管理](../../../register_center/cluster_manage?id=集群实例管理)                        |
-| 作业配置 | 集群配置         | Per-Job 和 Application 执行模式需要选择集群配置，请参考：[集群配置管理](../../../register_center/cluster_manage?id=集群配置管理)                       |
+| 作业配置 | 执行模式         | 区别请参考:[作业概述](../../administrator_guide/studio/job_hosting)                                                               |
+| 作业配置 | 集群实例         | Standalone 和 Session 执行模式需要选择集群实例，请参考：[集群实例管理](../../administrator_guide/register_center/cluster_manage?id=集群实例管理)       |
+| 作业配置 | 集群配置         | Per-Job 和 Application 执行模式需要选择集群配置，请参考：[集群配置管理](../../administrator_guide/register_center/cluster_manage?id=集群配置管理)      |
 | 作业配置 | FlinkSQL 环境  | 选择已创建的 FlinkSQLEnv，如果没有则不选                                                                                               |
 | 作业配置 | 任务并行度        | 指定作业级任务并行度，默认为 1                                                                                                         |
 | 作业配置 | Insert 语句集   | 默认禁用，开启后将 SQL编辑器中编写的多个 Insert 语句合并为一个 JobGraph 进行提交                                                                      |
 | 作业配置 | 全局变量         | 默认禁用，开启后可以使用数据源连接配置变量、自定义变量等                                                                                             |
 | 作业配置 | 批模式          | 默认禁用，开启后启用 Batch Mode                                                                                                    |
 | 作业配置 | SavePoint 策略 | 默认禁用，策略包括:<br/>   **最近一次**<br/>   **最早一次**<br/>   **指定一次**                                                               |
-| 作业配置 | 报警组          | 报警组配置请参考[告警管理](../../../register_center/warning)                                                                         |
+| 作业配置 | 报警组          | 报警组配置请参考[告警管理](../../administrator_guide/register_center/warning)                                                        |
 | 作业配置 | 其他配置         | 其他的 Flink 作业配置，具体可选参数，请参考 [Flink 官网](https://nightlies.apache.org/flink/flink-docs-release-1.14/docs/deployment/config/) |
 
 作业配置如下图：

@@ -19,9 +19,9 @@ title: 扩展数据源
    - Hive ``需要的jar包: hive-jdbc-2.1.1.jar && hive-service-2.1.1.jar``
 
 使用以上数据源,请查阅注册中心[数据源管理](../../administrator_guide/register_center/datasource_manage),配置数据源连接
-
+:::tip
 **说明：** Dinky 不在对 Starorcks 进行额外扩展，Doris 和 Starorcks 底层并无差别，原则上只是功能区分。经社区测试验证，可采用 Doris 扩展连接 Starrocks。
-
+:::
 ----
 
 ## 准备工作
@@ -617,5 +617,7 @@ eg:
    - 创建数据源相关表单属性在: `dlink-web/src/pages/DataBase/components/DataBaseForm.tsx` 此处无需修改
 
 ----
-至此 , 基于 Dinky 扩展数据源完成 , 如您也有扩展需求 ,请参照 [[如何 Issuse]](../../developer_guide/contribution/issue)    [[如何提交 PR]](../../developer_guide/contribution/pull_request)
 
+:::tip
+至此 , 基于 Dinky 扩展数据源完成 , 如您也有扩展需求 ,请参照 [[如何 Issuse]](../../developer_guide/contribution/issue)    [[如何提交 PR]](../../developer_guide/contribution/pull_request)
+:::

@@ -13,7 +13,7 @@ title: 作业监控
 
 ## 配置作业监控告警
 
-请参考注册中心的[告警管理](../../../administrator_guide/register_center/warning)
+请参考注册中心的[告警管理](../../administrator_guide/register_center/warning)
 
 ## 查看作业 Flink 监控指标
 

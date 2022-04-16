@@ -3,6 +3,7 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  background-image: linear-gradient(119.6deg, rgb(200, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
 }
 
 .featureSvg {
