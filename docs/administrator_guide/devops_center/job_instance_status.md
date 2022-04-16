@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 id: job_instance_status
-title: 查看与修改作业实例状态
+title: 作业实例状态
 ---
 
 如果您已经提交作业或者发布上线作业，可通过运维中心查看和修改作业实例状态。默认显示当前实例，切换后显示历史实例。
@@ -41,7 +41,7 @@ title: 查看与修改作业实例状态
 | 字段名称 |                             说明                             |
 | :------: | :----------------------------------------------------------: |
 |  作业名  |               创建的作业名称，即pipeline.name                |
-| 生命周期 |                            已上线                            |
+| 生命周期 |                      开发中<br/> 已上线                      |
 | 运行模式 | tandalone<br/>Yarn Session<br/>Yarn Per-job<br/>Yarn Application<br/>Kubernetes Session<br/>Kubernetes Application |
 | 集群实例 |                          定义的集群                          |
 |  作业ID  |                        作业名对应的id                        |
@@ -49,7 +49,7 @@ title: 查看与修改作业实例状态
 | 开始时间 |                       作业创建时的时间                       |
 |   耗时   |                        作业运行的时长                        |
 
-:::warning:
+:::warning 警告
 
 集群实例中，Session 集群显示集群实例，Application 及 Per-job 则不显示
 

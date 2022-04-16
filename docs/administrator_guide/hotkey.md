@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 id: feature
 title: 快捷键使用指南
 ---

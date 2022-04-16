@@ -17,23 +17,42 @@ title: 报警管理
 首先要进入**注册中心** > **报警管理**，然后选择左侧的报警实例管理，创建一个告警实例。然后选择对应的报警插件。然后选择报警组管理，创建一个报警组。
 
 目前Dinky支持的报警插件有：
-- **[钉钉](#钉钉)方式告警 :** WebHook
-- **[企业微信](#企业微信)方式告警 :** 包含 **应用** **群聊**
-- **[飞书](#飞书)方式告警 :** WebHook 
-- **[邮箱](#邮箱)方式告警 :**  通过邮件发送报警通知
+- **[钉钉](#钉钉)告警 :** WebHook
+- **[企业微信](#企业微信)告警 :** 包含 **应用** **群聊**
+- **[飞书](#飞书)告警 :** WebHook 
+- **[邮箱](#邮箱)告警 :**  通过邮件发送报警通知
+
 ## 报警实例管理
 
-### 告警实例列表
-![alert_instance_list](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/warning/alert_instance_list.png)
+### 创建报警实例
 
-### 创建告警实例
 **注册中心** > **报警管理**，选择**新建**
 
 ![create_alert_instance](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/warning/create_alert_instance.png)
 
 点击以上告警实例类型,创建报警实例配置。报警实例配置完成，就可以创建报警组。
 
+### 查询报警实例信息
+
+![alert_instance_list](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/warning/alert_instance_list.png)
+
+
+
+报警实例信息相关字段含义如下：
+
+|     字段     |                    说明                     |
+| :----------: | :-----------------------------------------: |
+|     名称     |                  名称唯一                   |
+|     类型     | WeChat<br/> DingTalk<br/> FeiShu<br/> Email |
+|   是否启用   |             已启用<br/> 已禁用              |
+| 最近更新时间 |               报警的修改时间                |
+|     操作     |            对报警实例修改、删除             |
+
+
+
 ## 报警组管理
+
+### 创建报警组
 
 新建一个报警组，选择新建
 
@@ -41,7 +60,20 @@ title: 报警管理
 
 ![create_alert_group](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/warning/create_alert_group.jpg)
 
-## 钉钉
+### 查询报警组信息
+
+报警组信息相关字段含义如下：
+
+|     字段     |         说明         |
+| :----------: | :------------------: |
+|     名称     |       名称唯一       |
+|   是否启用   |  已启用<br/> 已禁用  |
+| 最近更新时间 |    报警的修改时间    |
+|     操作     | 对报警实例修改、删除 |
+
+## 报警类型
+
+### 钉钉
 
 如果用户使用钉钉进行报警，请进入**注册中心** > **报警管理** > **报警实例管理**，点击**新建** 选择**钉钉**报警实例。
 
@@ -62,11 +94,11 @@ title: 报警管理
 
 [钉钉-开发者文档](https://open.dingtalk.com/document/robots/custom-robot-access)
 
-## 企业微信
+### 企业微信
 
 如果用户使用企业微信进行报警，请进入**注册中心** > **报警管理** > **报警实例管理**，点击**新建** 选择**企业微信**报警实例。
 
-### 微信企业应用配置
+#### 微信企业应用配置
 
 ![create_wechat_alert](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/warning/create_wechat_app_alert.png)
 
@@ -82,7 +114,7 @@ title: 报警管理
 - **展示方式类型:** 支持 MarkDown 和文本；
 - **是否启用:** 默认禁用，需要开启；
 
-### 微信企业群聊配置
+#### 微信企业群聊配置
 
 ![create_wechat_chat_alert](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/warning/create_wechat_chat_alert.png)
 
@@ -106,8 +138,7 @@ title: 报警管理
 
 发送消息对应文档中的 content，与此相对应的值的变量为 {msg}
 
-
-## 飞书
+### 飞书
 
 如果用户使用飞书进行报警，请进入**注册中心** > **报警管理** > **报警实例管理**，点击**新建** 选择**飞书**报警实例。
 
@@ -129,8 +160,7 @@ title: 报警管理
 
 [飞书-自定义机器人接入开发文档](https://open.feishu.cn/document/ukTMukTMukTM/ucTM5YjL3ETO24yNxkjN)
 
-
-## 邮箱
+### 邮箱
 
 如果用户使用邮箱进行报警，请进入**注册中心** > **报警管理** > **报警实例管理**，点击**新建** 选择**邮箱**报警实例。
 
@@ -166,6 +196,10 @@ title: 报警管理
     
     
 
-:::warning
-  当前告警管理只适用于 FlinkSQL
+:::warning 注意
+
+- 报警管理只适用于 FlinkSQL
+
+- 报警管理只支持异步提交和发布
+
 :::

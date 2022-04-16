@@ -13,15 +13,19 @@ title: 集群管理
 
 对于以上的三种集群而言，Dinky 为用户提供了两种集群管理方式，一种是集群实例管理，一种是集群配置管理。
 
-**需要说明的是:**
+:::tip 说明
 
 - Standalone 集群适用于既可以做为查询使用，又可以将作业异步提交到远程集群
 - Yarn Session 和 Kubernetes Session 适用于既可以做为查询使用，又可以将作业异步提交到远程集群
 - Yarn Per-job，Yarn Application 和 Kubernetes Application 适用于异步提交
 
+:::
+
 ## 集群实例管理
 
 集群实例管理适用于 Standalone，Yarn Session 和 Kubernetes Session 这三种集群实例的注册。
+
+对于已经注册的集群实例，您可以对集群实例做编辑、删除、搜索、心跳检测和回收等。
 
 ### 注册集群实例
 
@@ -39,52 +43,17 @@ title: 集群管理
 - **JobManager HA地址：** JobManager 的 RestAPI 地址，当 HA 部署时，将可能出现的多个 RestAPI 地址均写入，且采用英文逗号隔开
 - **注释：** 自定义
 
-当集群实例配置完成后，点击**心跳**，会更新最新的集群实例信息
 
-![heartbeat_check](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/heartbeat_check.png)
-
-点击**回收**，会将提交 Per-Job 和 Application 任务时自动注册且已经注销的集群实例进行回收
-
-![recovery](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/recovery.png)
-
-**注意：** 心跳与回收需要手动触发
-
-
-### 集群实例编辑
-
-当集群配置完成后，用户可以对集群实例做编辑修改。
-
-首先进入 **注册中心 > 集群实例管理**，在列表中找到对应的集群实例，点击 **编辑**，编辑集群
-
-
-![cluster_instance_editing](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_instance_editing.png)
-
-
-![cluster_editing](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_editing.png)
-
-### 集群实例删除
-
-用户可以对所添加的集群实例进行删除。
-
-首先进入 **注册中心 > 集群实例管理**，在列表中找到对应的集群实例，点击 **删除**，删除集群!
-
-![cluster_instance_detele](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_instance_detele.png)
-
-![cluster_editing](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_editing.png)
-
-### 搜索
-
-当用户集群实例配置完成后，配置的信息会显示在列表中，用户可以通过名称，别名，创建时间对配置的作业进行查找。
-
-![搜索](http://www.aiwenmo.com/dinky/dev/docs/%E6%90%9C%E7%B4%A2.png)
 
 ## 集群配置管理
 
-集群配置管理适用于 Yarn Per-job，Yarn Application 和 Kubernetes Application 这三种类型配置。
+集群配置管理适用于 Yarn Per-job、Yarn Application 和 Kubernetes Application 这三种类型配置。
+
+对于已经注册的集群配置，您可以对集群配置做编辑、删除和搜索等。
 
 ### 集群配置
 
-首先进入**注册中心 > 集群管理 > 集群配置管理**，点击 **新建** 后，可以创建集群配置，参数配置完成后，点击 **测试** 及 **完成** 即可。
+单击**注册中心 > 集群管理 > 集群配置管理 > 新建 **
 
 ![create_cluster_config_1](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/create_cluster_config_1.png)
 
@@ -108,36 +77,28 @@ title: 集群管理
   - **注释:** 自定义
   - **是否启用:** 默认禁用，需要开启
 
-参数配置完成后，点击 **测试**，会显示测试连接成功。
+## 查看集群信息
 
-![cluster_test](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_test.png)
+创建集群后可在**集群实例管理**后者**集群配置**中查看集群信息。
 
-待测试连接成功后，选择完成即可。至此集群配置成功，可连接远程集群进行作业提交。
+集群信息相关字段含义如下：
 
-### 集群编辑
+|      字段      |                             说明                             |
+| :------------: | :----------------------------------------------------------: |
+|      名称      |                         名称是唯一的                         |
+|      别名      |                            自定义                            |
+|      类型      | Standalone<br/>Yarn Session<br/>Yarn Per-job<br/>Yarn Application<br/>Kubernetes Session<br/>Kubernetes Application |
+| JobManager地址 |                         Rest API地址                         |
+|      版本      |                          Flink 版本                          |
+|      状态      |                        正常<br/> 异常                        |
+|    是否启用    |                      已启用<br/> 已禁用                      |
+|    注册方式    |                        手动<br/> 自动                        |
+|  最近更新时间  |                       集群信息修改时间                       |
+|      操作      |                    对集群做编辑、删除操作                    |
 
-当集群配置完成后，用户可以对集群配置做编辑修改。
+:::warning 注意事项
 
-首先进入 **注册中心 > 集群配置管理**，在列表中找到对应的集群名称，点击 **编辑** 后，维护集群配置
+   当非Session类作业提交和发布后，作业会成为一个集群实例而存在
 
-![cluster_config_editing](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_config_editing.png)
+:::
 
-![update_cluster_configuration](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/update_cluster_configuration.png)
-
-### 集群删除
-
-用户可以对所添加的集群配置进行删除。
-
-首先进入 **注册中心 > 集群配置管理**，在列表中找到对应的集群，点击 **删除** 后，删除集群
-
-![cluster_config_delete](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/cluster_config_delete.png)
-
-![删除集群配置](http://www.aiwenmo.com/dinky/docs/zh-CN/administrator_guide/register_center/cluster_manage/delete_cluster_config.png)
-
-### 搜索
-
-当用户集群配置完成后，配置的信息会显示在列表中，用户可以通过名称，别名，创建时间对配置的作业进行查找。
-
-![搜索](http://www.aiwenmo.com/dinky/dev/docs/%E6%90%9C%E7%B4%A2.png)
-
-**说明：** 当集群配置的作业异步提交成功，可以看到所作业提交后的实例。同集群实例一样，可以对所在的集群实例进行回收，删除，编辑等操作。集群实例的操作步骤请查看集群实例管理部分。
