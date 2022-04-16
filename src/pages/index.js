@@ -68,7 +68,6 @@ function Structure() {
     const {siteConfig} = useDocusaurusContext();
     return (
         <div className={clsx("structure", styles.structure)}>
-            <div></div>
             <div className="image"><img
                 src="http://www.aiwenmo.com/dinky/docs/zh-CN/concept_architecture/architecture/dinky.png"
                 alt="structure"/></div>
