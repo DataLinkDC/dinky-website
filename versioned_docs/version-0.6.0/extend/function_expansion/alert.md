@@ -7,7 +7,7 @@ title: 扩展报警插件
 
 
 
-Dinky 告警机制 遵循 SPI,可随意扩展所需要的告警机制。如需扩展可在 dlink-alert 模块中进行可插拔式扩展。现已经支持的告警机制包括如下：
+Dinky 告警机制遵循 SPI,可随意扩展所需要的告警机制。如需扩展可在 dlink-alert 模块中进行可插拔式扩展。现已经支持的告警机制包括如下：
 
 - DingDingTalk
 - 企业微信: 同时支持**APP** 和 **WeChat 群聊** 方式
@@ -68,34 +68,36 @@ Dinky 学习了 ``Apache Dolphinscheduler`` 的插件扩展机制，可以在 Di
 ## 前端开发
 - **dlink-web** 为 Dinky 的前端模块
 - 扩展告警插件相关表单所在路径: `dlink-web/src/pages/AlertInstance`
-  - 修改 `dlink-web/src/pages/AlertInstance/conf.ts` 的 **ALERT_TYPE** 中 :
-    - **ALERT_TYPE** 添加如下 eg: 
-    - 
+  - 修改 `dlink-web/src/pages/AlertInstance/conf.ts` 
+
+  **ALERT_TYPE** 添加如下 eg:
   ```
   EMAIL:'Email', 
   ```
-  
-    - **ALERT_CONFIG_LIST** 添加如下 eg: 
+  **ALERT_CONFIG_LIST** 添加如下 eg: 
   ```
    {
       type: ALERT_TYPE.EMAIL,
     } 
   ```
-    - 注意: 此处属性值需要与后端 `static final String TYPE = "Email";`变量值保持一致
+ **注意:** 此处属性值需要与后端 `static final String TYPE = "Email";`变量值保持一致
+
 如下图:
 ![extend_alert_conf](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/function_expansion/alert/extend_alert_conf.png)
 
 
-  - 修改 `dlink-web/src/pages/AlertInstance/icon.tsx` 的 **getAlertIcon** 中 添加如下:
-  eg:
+  修改 `dlink-web/src/pages/AlertInstance/icon.tsx` 的 **getAlertIcon** 中 
+  
+  添加如下 eg:
 ```
   case ALERT_TYPE.EMAIL:
       return (<Icon component={EmailSvg}/>);
 ```
-同时在下方定义 SVG : `如不定义将使用默认 SVG`
-    - svg 获取: [https://www.iconfont.cn](https://www.iconfont.cn)
+同时在下方定义 SVG :  `如不定义将使用默认 SVG`
+
+svg 获取: [https://www.iconfont.cn](https://www.iconfont.cn)
 ```
-export const DingTalkSvg = () => (
+export const EmailSvg = () => (
       {svg 相关代码}
 );
 ```
@@ -106,10 +108,9 @@ export const DingTalkSvg = () => (
 
 
 
-  - 修改 `dlink-web/src/pages/AlertInstance/components/AlertInstanceChooseForm.tsx` 追加如下:
-  eg: 其中需要修改的地方为
-    - 1. `EMAIL` 替换为上述 **dlink-web/src/pages/AlertInstance/conf.ts** 中 **ALERT_TYPE** 的新增类型
-    - 2. `EmailForm` 为新建告警表单文件 **dlink-web/src/pages/AlertInstance/components/EmailForm.tsx** 中的 **EmailForm** .
+  - 修改 `dlink-web/src/pages/AlertInstance/components/AlertInstanceChooseForm.tsx` 
+ 
+  追加如下  eg: 
 ```
       {(values?.type == ALERT_TYPE.EMAIL || alertType == ALERT_TYPE.EMAIL)?
         <EmailForm
@@ -128,6 +129,10 @@ export const DingTalkSvg = () => (
         />:undefined
       }
 ```
+其中需要修改的地方为
+-  `EMAIL` 替换为上述 **dlink-web/src/pages/AlertInstance/conf.ts** 中 **ALERT_TYPE** 的新增类型
+-  `EmailForm` 为新建告警表单文件 **dlink-web/src/pages/AlertInstance/components/EmailForm.tsx** 中的 **EmailForm** .
+
 如下图:
 ![extened_alert_choose_form](http://www.aiwenmo.com/dinky/docs/zh-CN/extend/function_expansion/alert/extened_alert_choose_form.png)
 
@@ -136,7 +141,9 @@ export const DingTalkSvg = () => (
    - 注意: 
      - 部分表单属性保存为 Json 格式
      - 需要修改 如下的表单配置
- ```text
+ 
+
+ ```shell
     找到如下相关代码: 
     const [formVals, setFormVals] = useState<Partial<AlertInstanceTableListItem>>({
     id: props.values?.id,
@@ -149,7 +156,7 @@ export const DingTalkSvg = () => (
 ```
 
 
-----
-
-
-至此 , 基于 Dinky 扩展告警完成 , 如您也有扩展需求 ,请参照 [如何 Issuse](../../developer_guide/contribution/issue)    [如何提交 PR](../../developer_guide/contribution/pull_request)
+---- 
+:::tip
+至此 , 基于 Dinky 扩展告警完成 , 如您也有扩展需求 ,请参照 [[如何 Issuse]](../../developer_guide/contribution/issue)    [[如何提交 PR]](../../developer_guide/contribution/pull_request)
+:::

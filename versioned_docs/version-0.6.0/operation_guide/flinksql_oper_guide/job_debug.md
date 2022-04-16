@@ -7,7 +7,7 @@ title: 作业调试
 
 
 
-可以选择使用 Standalone 或 Session 集群在开发测试环境对作业调试，如作业运行、检查结果等。配置 Standalone 或 Session 集群请参考注册中心中[集群管理](../../../register_center/cluster_manage)的集群实例管理。
+可以选择使用 Standalone 或 Session 集群在开发测试环境对作业调试，如作业运行、检查结果等。配置 Standalone 或 Session 集群请参考注册中心中[集群管理](../../administrator_guide/register_center/cluster_manage)的集群实例管理。
 
 也可以调试普通的 DB SQL 作业。
 

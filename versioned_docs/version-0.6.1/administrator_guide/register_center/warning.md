@@ -165,6 +165,7 @@ title: 报警管理
     - **XLS存放目录:** 非必填 默认路径为: /tmp/xls
     
     
-:::warning:
+
+:::warning
   当前告警管理只适用于 FlinkSQL
 :::
