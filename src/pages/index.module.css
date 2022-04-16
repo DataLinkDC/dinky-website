@@ -9,6 +9,8 @@
   position: relative;
   overflow: hidden;
   height: 650px;
+    /*background-image: linear-gradient(120deg, rgb(161, 196, 253) 0%, rgb(194, 233, 251) 100%);*/
+    background-image: linear-gradient(135deg, rgb(94, 252, 232) 10%, rgb(115, 110, 254) 100%);
 }
 
 @media screen and (max-width: 996px) {

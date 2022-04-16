@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
+
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -48,14 +49,6 @@ function HomepageHeader() {
                  height={30}
                  title="GitHub Stars"
                />
-              {/*<br/>*/}
-               {/*<iframe*/}
-               {/*    className={styles.indexCtasGitHubButton}*/}
-               {/*    src="https://ghbtns.com/github-btn.html?user=DataLinkDC&amp;repo=dlink&amp;type=fork&amp;count=true&amp;size=large"*/}
-               {/*    width={160}*/}
-               {/*    height={30}*/}
-               {/*    title="GitHub Forks"*/}
-               {/*/>*/}
              </span>
         </div>
       </div>
@@ -84,8 +77,12 @@ function Structure() {
                         致力于流批一体和湖仓一体的建设与实践。
                     </div> <br/>
                     <a href={siteConfig.customFields.learningMore} target="_blank" className="action-button">
-                        学习更多
+                        学习更多 →
                     </a>
+                    {/*&nbsp;&nbsp;*/}
+                    {/*<a href="/blog"   className="action-button">*/}
+                    {/*    最新动态*/}
+                    {/*</a>*/}
                 </div>
             </div>
     );

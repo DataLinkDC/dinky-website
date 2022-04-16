@@ -77,7 +77,11 @@ const config = {
             id: 'announcementBar-2', // Increment on change
             content: `⭐️ &nbsp; If you like Dinky , give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/DataLinkDC/dlink">GitHub</a>`,
             backgroundColor: "#BBDFFF",
+            isCloseable: false,
           },
+      hideOnScroll: false, // 滚动时是否隐藏 | Whether to hide the sidebar on scroll
+      hideableSidebar: true, // 是否隐藏侧边栏 | Whether to hide the sidebar in mobile
+      autoCollapseSidebarCategories: true, // 点击另一个分类时自动折叠当前分类 | Click another category will automatically collapse the current category
       navbar: {
         title: 'Dinky',
         logo: {
@@ -196,7 +200,7 @@ const config = {
                 href: 'https://github.com/DataLinkDC/dlink',
               },
               // {
-              //   label: '用户案例',
+              //   label: '最新动态',
               //   to: '/blog',
               // },
             ],
