@@ -106,13 +106,13 @@ const config = {
                 to: "/docs/next/intro",
               },
              {
-               label: "0.6.1",
+               label: "0.6",
                to: "/docs/intro",
              },
-              {
-                  label: "0.6.0",
-                  to: "/docs/0.6.0/intro",
-                },
+//              {
+//                  label: "0.6",
+//                  to: "/docs/0.6/intro",
+//                },
               {
                 label: "All Versions",
                 to: "/versions",

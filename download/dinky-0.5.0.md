@@ -13,7 +13,7 @@ title: 0.5.0 release
 
 Dinky 0.5.0版本包括对K8S的支持以及数据库,catalog的实现。它还包括对0.4.0 中引入的一些重大更改的修复。
 
-#### 新增功能
+### 新增功能
 - 支持Kubernetes Session 和 Application 模式提交任务
 - 新增UDF Java方言的Local模式的在线编写、调试、动态加载
 - 新增FlinkSQL 执行环境方言及其应用功能
@@ -35,7 +35,7 @@ Dinky 0.5.0版本包括对K8S的支持以及数据库,catalog的实现。它还�
 - 新增Yarn 的 Kerboros 验证
 - 建立官网文档
 
-#### 修复
+### 修复
 - 修改项目名为 Dinky 以及图标
 - 优化所有模式的所有功能的执行逻辑
 - 升级各版本 Flink 依赖至最新版本以解决核弹问题

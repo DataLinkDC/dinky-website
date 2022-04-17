@@ -34,13 +34,13 @@ title: 如何贡献
 
 ## 参与文档贡献
 
-请查阅 [文档贡献](./document)
+请查阅 [文档贡献](../document)
  
 ## 参与代码贡献
 
-IDEA 调试请查阅 [本地调试](../local_debug) 及 [远程调试](../remote_debug)
+IDEA 调试请查阅 [本地调试](../../local_debug) 及 [远程调试](../../remote_debug)
 
-贡献请查阅 [Issue 需知](./issue)，[Pull Request 需知](./pull_request)，[Commit Message 需知](./commit_message)
+贡献请查阅 [Issue 需知](../issue)，[Pull Request 需知](../pull_request)，[Commit Message 需知](../commit_message)
 
 ## 如何领取 Issue，提交 Pull Request
 
