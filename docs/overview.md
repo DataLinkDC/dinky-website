@@ -7,16 +7,13 @@ title: Dinky 概览
 
 ## 概述
 
-Dinky 做为 FlinkSQL 的实时计算平台目前可以被部署在本地。充分利用了 Flink 在 SQL 上计算的能力，为您提供极致的 Dinky 使用体验。
+Dinky 作为 [Apache Flink](https://github.com/apache/flink) 的 FlinkSQL 的实时计算平台，具有以下核心特点。
 
-- **开源：** 产品提供多个的 Flink 版本，与开源 Flink 接口完全兼容，满足您的平滑迁移业务的需求。
-
-- **免费：** 平台各组件免费使用，您只需部署 Dinky，Flink 及相关上下游存储系统即可使用 Dinky 产品。
-- **易用：** 提供开箱即用的作业开发平台，以及 Metric 采集、展示、监控和报警的能力。满足分钟级别搭建平台的需求，节省时间。
-
-[Apache Flink](https://github.com/apache/flink)是 Apache 社区的先进开源项目，主攻流计算领域，具备高吞吐，低延时的特点，已经成为了目前流式处理领域的热门引擎。主要应用功能包括流批一体化及湖仓一体化的建设。
-
-Dinky 做为实时数据中台，当前也支持各种数据源连接。
+- **支持 Flink 原生语法、连接器、UDF 等：** 几乎零成本将 Flink 作业迁移至 Dinky。
+- **增强 FlinkSQL 语法：** 表值聚合函数、全局变量、CDC多源合并、执行环境、语句合并、共享会话等。
+- **支持 Flink 多版本：** 支持作为多版本 FlinkSQL Server 的能力以及 OpenApi。
+- **支持外部数据源的 DB SQL 操作：** 如 ClickHouse、Doris、Hive、Mysql、Oracle、Phoenix、PostgreSql、SqlServer 等。
+- **支持实时任务运维：** 作业上线下线、作业信息、集群信息、作业快照、异常信息、作业日志、数据地图、即席查询、历史版本、报警记录等。
 
 ## 支持上下游系统
 
@@ -45,13 +42,7 @@ Flink SQL 支持丰富的 Connector，实时计算平台支持支持 Flink 1.11�
 
 ## 管理控制台介绍
 
-Dinky 实时数据中台数据开发模块包括 **数据开发**、**运维中心**、**注册中心** 和 **系统设置** 四大模块。
-
-1.在浏览器输入 Dinky 地址；
-
-2.点击登录进入 Dinky 管理界面控制台；
-
-
+Dinky 实时计算平台开发模块包括 **数据开发**、**运维中心**、**注册中心** 和 **系统设置** 四大模块。
 
 ### 数据开发
 
@@ -59,13 +50,9 @@ Dinky 实时数据中台数据开发模块包括 **数据开发**、**运维中�
 
 ![data_ops](http://www.aiwenmo.com/dinky/docs/zh-CN/overview/data_ops.png)
 
-
-
-
 ### 运维中心
 
 ![devops_center](http://www.aiwenmo.com/dinky/docs/zh-CN/overview/devops_center.png)
-
 
 ### 注册中心
 
@@ -73,12 +60,8 @@ Dinky 实时数据中台数据开发模块包括 **数据开发**、**运维中�
 
 ![register_center](http://www.aiwenmo.com/dinky/docs/zh-CN/overview/register_center.png)
 
-
-
-
 ### 系统设置
 
 系统设置包括用户管理和Flink设置
 
 ![system_settings](http://www.aiwenmo.com/dinky/docs/zh-CN/overview/system_settings.png)
-

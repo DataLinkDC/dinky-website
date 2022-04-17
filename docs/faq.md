@@ -10,26 +10,32 @@ title: FAQ
 
 **解决办法：**
 
-```
-#解决方案一
-#添加HADOOP_HOME环境变量，修改 /etc/profile
+- 方案一
+
+升级 Dinky 至 0.6.2 及后续版本。
+详见：[https://github.com/DataLinkDC/dlink/issues/310](https://github.com/DataLinkDC/dlink/issues/310)
+- 方案二
+
+添加HADOOP_HOME环境变量，修改 /etc/profile
+``` shell
 export HADOOP_HOME=/opt/cloudera/parcels/CDH/lib/hadoop
-#解决方案二
-auto.sh里加一行export HADOOP_HOME=/opt/cloudera/parcels/CDH/lib/hadoop
 ```
 
+- 方案三
 
+auto.sh 里加一行
+``` shell
+export HADOOP_HOME=/opt/cloudera/parcels/CDH/lib/hadoop
+```
 
-2.出现commons-cli异常报错，需要在如下路径放入commons-cli依赖
+2.出现 commons-cli 异常报错，需要在如下路径放入 commons-cli 依赖
 
 **解决办法：**
 
-```
 下载common-cli包，需要在如下路径放置：
-在Flink的下的lib
-在dinky下的plugins
-HDFS的/flink/lib/
-```
+- Flink 的 lib
+- dinky 的 plugins
+- HDFS 的 /flink/lib/
 
 3.依赖冲突
 
@@ -37,14 +43,12 @@ HDFS的/flink/lib/
 
 **解决办法：**
 
-```
-添加flink-shade-hadoop-uber-3包后，请手动删除该包内部的javax.servlet 等冲突内容
-```
+如果添加 flink-shade-hadoop-uber-3 包后，请手动删除该包内部的javax.servlet 等冲突内容
 
 4.连接hive异常
 
-```shell
-异常信息 Caused by: java.lang.ClassNotFoundException: org.apache.http.client.HttpClient
+``` java
+Caused by: java.lang.ClassNotFoundException: org.apache.http.client.HttpClient
 ```
 
 ![hive_http_error](http://www.aiwenmo.com/dinky/docs/zh-CN/faq/hive_http_error.png)
@@ -52,8 +56,5 @@ HDFS的/flink/lib/
 **解决办法:** 
 
 在plugins下添加以下包
-
-```shell
-httpclient-4.5.3.jar
-httpcore-4.4.6.jar
-```
+- httpclient-4.5.3.jar
+- httpcore-4.4.6.jar
