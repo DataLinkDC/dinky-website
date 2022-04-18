@@ -19,7 +19,9 @@ title: 远程调试
 
 对于开发者来说，如何在 IDEA 中对作业进行远程调试及提交。下面以 Yarn Session 模式为例。
 
-**说明:** 环境准备及源码导入 IDEA，请参考本地调试
+:::tip 说明
+环境准备及源码导入 IDEA，详见[本地调试](../../developer_guide/local_debug)
+:::
 
 ## 环境
 
@@ -56,13 +58,16 @@ mvn clean package -Dmaven.test.skip=true
 ![install](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/local_package_install.jpg)
 图形化编译，需要跳过 test ，并进行 clean ==> install。
 
-**注意：**如果不执行 install 生成的 jar安装不到本地 别的依赖就识别不到本地仓库这些包  所以可能导依赖的时候会报错 CustomTableEnvironmentImpl 这个类未定义 。
-
-**说明:** 
+**说明:**
 
 ​     1.如果不想单独编译前端，在 dlink-web 模块的 pom 下有``frontend-maven-plugins``，可直接前后端编译；
 
-​     2.如果要分开编译，在后端编译完成后，需要在 dlink-web 下执行 ``npm i --force ``;  
+​     2.如果要分开编译，在后端编译完成后，需要在 dlink-web 下执行 ``npm i --force ``;
+
+:::warning 注意事项
+ 如果不执行 install 生成的 jar安装不到本地 别的依赖就识别不到本地仓库这些包  所以可能导依赖的时候会报错 CustomTableEnvironmentImpl 这个类未定义 。
+:::
+
 
 ## 远程调试环境搭建
 
@@ -164,7 +169,9 @@ sa-token:
 - **hadoop配置文件:** core-site.xml   hdfs-site.xml   yarn-site.xml  hive-site.xml;
 - **Flink配置文件：** flink-conf.yaml；
 
-**注意:** hive-site.xml 需要使用到 Hive Catalog 时添加;
+:::warning 注意事项
+hive-site.xml 需要使用到 Hive Catalog 时添加
+:::
 
 ### 添加 plugins 插件依赖
 
@@ -204,7 +211,7 @@ yarn-session.sh -n 2 -jm 1024 -tm 4096 -s 6 -d
 - **访问:** 127.0.0.1:8000
 - **账户密码:** admin/admin
 
-**说明：** 在 Dinky-0.6 版本后，不需要额外启动前端，如需进行前后端联调,可参照[方式二](./remote_debug#方式二)
+在 Dinky-0.6 版本后，不需要额外启动前端，如需进行前后端联调,详见[方式二](../remote_debug#方式二)
 
 
 
@@ -354,8 +361,9 @@ insert into sink_order_mysql_goods_order_pay select * from source_order_my
 **运维中心查看 JOB 详情**
 ![job_davops_center](http://www.aiwenmo.com/dinky/docs/zh-CN/developer_guide/remote_debug/devops_job_detail.png)
 
-
-**注意事项:** 如果拉取了新代码，远程调试环境一定要检查一遍，以防各种报错。
+:::warning 注意事项
+如果拉取了新代码，远程调试环境一定要检查一遍，以防各种报错。
+:::
 
 
 

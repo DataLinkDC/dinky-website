@@ -15,7 +15,7 @@ title: 编译
 | jdk      | 1.8.0_201 |                                   |
 | maven    | 3.6.3     |                                   |
 | lombok   | 1.18.16   | 如果在idea编译，需要自行安装 插件 |
-| mysql    | 5.6+      |                                   |
+| mysql    | 5.7+      |                                   |
 
 ## NodeJS 安装部署
 
@@ -54,7 +54,7 @@ npm install -g npm@7.19.0
 
 ## MySQL 部署
 
-MySQL版本选择5.6+
+MySQL版本选择5.7+
 
 ### Windows 版本
 
@@ -64,7 +64,7 @@ MySQL版本选择5.6+
 
 ### Linux 版本
 
-[下载地址]( [http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm](http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm))
+[下载地址](http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm)
 
 下载完成后，安装配置即可，操作如下：
 
@@ -191,7 +191,7 @@ maven ->> dlink->> 生命周期->> 跳过测试 ->> 双击install
 打包完成后 安装包见项目根下  build 文件夹下
 ```
 
-说明：如果要对 Dinky 做二次开发，请参考[开发调试](../developer_guide/debug)
+说明：如果要对 Dinky 做二次开发，详见开发者指南中的[本地调试](../../developer_guide/local_debug)
 
 ### Linux 编译
 
@@ -204,7 +204,7 @@ mvn clean install -Dmaven.test.skip=true
 
 切换到 Dinky 根目录下得 build 文件夹下，即可出现编译后的安装包。
 
-以上就是 Dinky 源码编译的详细步骤，Dinky 如何安装部署，请查看下一章节[Dinky部署](./deploy)
+以上就是 Dinky 源码编译的详细步骤，Dinky 如何安装部署，请查看下一章节[部署](../deploy)
 
 
 
