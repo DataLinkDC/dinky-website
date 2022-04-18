@@ -57,4 +57,4 @@ title: 环境配置
 
 手动部署外部数据源，然后注册到 **数据源管理** 。
 
-如何注册外部数据源，详见[数据源管理](../../register_center/datasource_manage)。当前 Dinky 支持的数据源请参考功能扩展中的[扩展数据源](../../extend/function_expansion/datasource)
+如何注册外部数据源，详见[数据源管理](../../register_center/datasource_manage)。当前 Dinky 支持的数据源详见功能扩展中的[扩展数据源](../../../extend/function_expansion/datasource)

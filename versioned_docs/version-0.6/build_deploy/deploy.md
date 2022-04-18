@@ -214,7 +214,7 @@ $sh auto.sh status
 
 默认用户名/密码: admin/admin
 
-:::warning 注意事项
+:::tip 说明
    Dinky 部署需要 MySQL5.7 以上版本
    
    Dinky 不依赖于 Nginx， Nginx 可选

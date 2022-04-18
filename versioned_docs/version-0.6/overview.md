@@ -38,7 +38,7 @@ Flink SQL 支持丰富的 Connector，实时计算平台支持支持 Flink 1.11�
 
 ### 其他数据源
 
-数据源支持请见[扩展数据源](../extend/function_expansion/datasource)
+数据源支持详见[扩展数据源](../extend/function_expansion/datasource)
 
 ## 管理控制台介绍
 
