@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 title: 0.4.0 release
 ---
 
@@ -13,7 +13,7 @@ title: 0.4.0 release
 
 Dinky 0.4.0是对FlinkSQL Studio的正式开源发布版本。
 
-#### 新增功能
+### 新增功能
 - 支持standalone，yarn-session，yarn-per-job，yarn-application 多种模式的 FlinkSQL 执行与作业运维；
 - 支持yarn-application 的 User Jar 提交；
 - 支持SavePoint 管理与恢复；

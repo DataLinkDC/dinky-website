@@ -28,9 +28,6 @@ export default function() {
                         <td>
                             <a href={dataSource.table.version[0].link}>{dataSource.table.doc}</a>
                         </td>
-                        <td>
-                            <a href={"https://github.com/DataLinkDC/dlink/archive/refs/tags/"+dataSource.table.version[0].title+".zip"}>{dataSource.table.source}</a>
-                        </td>
                     </tr>
                 </table>
                 <br/>
@@ -44,21 +41,18 @@ export default function() {
                         </td>
                     </tr>
                 </table>
-                <br/>
-                <h3>{dataSource.passVersion}</h3>
-                <p>{dataSource.passVersionExplain}</p>
+{/*                <br/>
+               <h3>{dataSource.passVersion}</h3>
+               <p>{dataSource.passVersionExplain}</p>
                 <table>
-                      {/* 每增加一个版本 需要在这里添加一组 tr  此处只放历史版本  且需要更换下标值 */}
+                       // 每增加一个版本 需要在这里添加一组 tr  此处只放历史版本  且需要更换下标值
                       <tr>
                         <td>{dataSource.table.version[1].title}</td>
                         <td>
                             <a href={dataSource.table.version[1].link}>{dataSource.table.doc}</a>
                         </td>
-                        <td>
-                        <a href= {"https://github.com/DataLinkDC/dlink/archive/refs/tags/"+dataSource.table.version[0].title+".zip"}>{dataSource.table.source}</a>
-                        </td>
                     </tr>
-                </table>
+                </table>*/ }
             </div>
         </Layout>
     );
