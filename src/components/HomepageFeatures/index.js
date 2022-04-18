@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
     {
-        title: '沉侵式',
+        title: '沉浸式',
         Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
         description: (
             <>
