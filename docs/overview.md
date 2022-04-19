@@ -15,30 +15,6 @@ Dinky 作为 [Apache Flink](https://github.com/apache/flink) 的 FlinkSQL 的实
 - **支持外部数据源的 DB SQL 操作：** 如 ClickHouse、Doris、Hive、Mysql、Oracle、Phoenix、PostgreSql、SqlServer 等。
 - **支持实时任务运维：** 作业上线下线、作业信息、集群信息、作业快照、异常信息、作业日志、数据地图、即席查询、历史版本、报警记录等。
 
-## 支持上下游系统
-
-### FlinkSQL Connector
-
-Flink SQL 支持丰富的 Connector，实时计算平台支持支持 Flink 1.11、Flink 1.12、Flink 1.13 和 Flink 1.14 四个版本，对应的版本支持所有开源的上下游存储详见具体Connector信息，请参见Flink开源社区：
-
-- [Flink1.11](https://nightlies.apache.org/flink/flink-docs-release-1.11/dev/table/connectors/)
-- [Flink1.12](https://nightlies.apache.org/flink/flink-docs-release-1.12/dev/table/connectors/)
-- [Flink1.13](https://nightlies.apache.org/flink/flink-docs-release-1.13/docs/connectors/table/overview/)
-- [Flink1.14](https://nightlies.apache.org/flink/flink-docs-release-1.14/docs/connectors/table/overview/)
-
-另外非 Flink 官网支持的 Connector 详见 github：
-
-- [Flink-CDC](https://github.com/ververica/flink-cdc-connectors/releases/)
-- [Hudi](https://github.com/apache/hudi/releases)
-- [Iceberg](https://github.com/apache/iceberg/releases)
-- [Doris](https://github.com/apache/incubator-doris-flink-connector/tags)
-- [Starrocks](https://github.com/StarRocks/flink-connector-starrocks/releases)
-- [ClickHouse](https://github.com/itinycheng/flink-connector-clickhouse)
-- [Pulsar](https://github.com/streamnative/pulsar-flink/releases)
-
-### 其他数据源
-
-数据源支持详见[扩展数据源](../extend/function_expansion/datasource)
 
 ## 管理控制台介绍
 
