@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 id: operators_functions
 title: 运算符和内置函数
 ---
