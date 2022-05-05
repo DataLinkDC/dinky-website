@@ -2,13 +2,40 @@
 sidebar_position: 7
 id: cdcsource_statements
 title: CDCSOURCE 整库同步
+
 ---
 
-## EXECUTE CDCSOURCE
+## 设计背景
+
+目前通过 FlinkCDC 进行会存在诸多问题，如需要定义大量的 DDL 和编写大量的 INSERT INTO，更为严重的是会占用大量的数据库连接，对 Mysql 和网络造成压力。
+
+Dinky 定义了 CDCSOURCE 整库同步的语法，该语法和 CDAS 作用相似，可以直接自动构建一个整库入仓入湖的实时任务，并且对 source 进行了合并，不会产生额外的 Mysql 及网络压力，支持对任意 sink 的同步，如 kafka、doris、hudi、jdbc 等等
+
+## 原理
+
+### source 合并
+
+![source_merge](http://www.aiwenmo.com/dinky/docs/zh-CN/data_integration_guide/cdcsource_statementssource_merge.png)
+
+   面对建立的数据库连接过多，Binlog 重复读取会造成源库的巨大压力，上文分享采用了 source 合并的优化，尝试合并同一作业中的 source，如果都是读的同一数据源，则会被合并成一个 source 节点。
+
+​    Dinky 采用的是只构建一个 source，然后根据 schema、database、table 进行分流处理，分别 sink 到对应的表。
+
+### 元数据映射
+
+Dinky 是通过自身的数据源中心的元数据功能捕获源库的元数据信息，并同步构建 sink 阶段 datastream 或 tableAPI 所使用的 FlinkDDL。
+
+![meta_mapping](http://www.aiwenmo.com/dinky/docs/zh-CN/data_integration_guide/cdcsource_statementsmeta_mapping.png)
+
+### 多种 sink 方式
+
+Dinky 提供了各式各样的 sink 方式，通过修改语句参数可以实现不同的 sink 方式。Dinky 支持通过 DataStream 来扩展新的 sink，也可以使用 FlinkSQL 无需修改代码直接扩展新的 sink。
+
+![sink](http://www.aiwenmo.com/dinky/docs/zh-CN/data_integration_guide/cdcsource_statementssink.png)
+
+## EXECUTE CDCSOURCE 基本使用
 
 CDCSOURCE 语句用于将上游指定数据库的所有表的数据采用一个任务同步到下游系统。
-
-CDCSOURCE 整库同步的语法，该语法和 CDAS 作用相似，可以直接自动构建一个整库入仓入湖的实时任务，并且对 source 进行了合并，不会产生额外的 Mysql 及网络压力，支持对任意 sink 的同步，如 kafka、doris、hudi、jdbc 等等。
 
 ### 语法结构
 
@@ -47,12 +74,11 @@ WITH 参数通常用于指定 CDCSOURCE 所需参数，语法为`'key1'='value1'
 | sink.table.lower  | 否       | 无            | 目标表的表名全小写                                           |
 | sink.*            | 否       | 无            | 目标数据源的配置信息，同 FlinkSQL，使用 ${schemaName} 和 ${tableName} 可注入经过处理的源表名 |
 
-### 示例
+## 示例
 
 **实时数据合并至一个 kafka topic**
 
 ```sql
-
 EXECUTE CDCSOURCE jobname WITH (
   'connector' = 'mysql-cdc',
   'hostname' = '127.0.0.1',
@@ -74,7 +100,6 @@ EXECUTE CDCSOURCE jobname WITH (
 **实时数据同步至对应 kafka topic**
 
 ```sql
-
 EXECUTE CDCSOURCE jobname WITH (
   'connector' = 'mysql-cdc',
   'hostname' = '127.0.0.1',
@@ -120,7 +145,6 @@ EXECUTE CDCSOURCE jobname WITH (
 **实时数据 FlinkSQL 入仓 Doris**
 
 ```sql
-
 EXECUTE CDCSOURCE jobname WITH (
   'connector' = 'mysql-cdc',
   'hostname' = '127.0.0.1',
