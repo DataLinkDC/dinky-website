@@ -57,12 +57,12 @@ const config = {
             return `https://github.com/DataLinkDC/dinky-website/tree/master/${versionDocsDirPath}/${docPath}`;
           },
         },
-//        blog: {
-//          showReadingTime: true,
-//          // Please change this to your repo.
-//          editUrl:
-//            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-//        },
+       blog: {
+         showReadingTime: true,
+         // Please change this to your repo.
+         editUrl:
+           'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+       },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -152,6 +152,11 @@ const config = {
             type: 'localeDropdown',
             position: 'right',
           },
+         // {
+         //   to: 'blog',
+         //   label: '博客',
+         //   position: 'right'
+         // },
           {
             href: 'https://github.com/DataLinkDC/dlink',
             label: 'GitHub',
