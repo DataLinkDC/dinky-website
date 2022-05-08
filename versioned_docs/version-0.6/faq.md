@@ -53,7 +53,7 @@ Caused by: java.lang.ClassNotFoundException: org.apache.http.client.HttpClient
 
 ![hive_http_error](http://www.aiwenmo.com/dinky/docs/zh-CN/faq/hive_http_error.png)
 
-**解决办法:** 
+**解决办法:**
 
 在plugins下添加以下包
 - httpclient-4.5.3.jar
