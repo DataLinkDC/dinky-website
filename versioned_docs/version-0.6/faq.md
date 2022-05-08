@@ -53,8 +53,14 @@ Caused by: java.lang.ClassNotFoundException: org.apache.http.client.HttpClient
 
 ![hive_http_error](http://www.aiwenmo.com/dinky/docs/zh-CN/faq/hive_http_error.png)
 
-**解决办法:** 
+**解决办法:**
 
 在plugins下添加以下包
 - httpclient-4.5.3.jar
 - httpcore-4.4.6.jar
+
+5.找不到javax/ws/rs/ext/MessageBodyReader类
+![image](https://user-images.githubusercontent.com/40588644/166678799-13450726-6b89-4a04-9911-0ad0b11cf4dd.png)
+**解决办法:**
+在plugins下添加以下包
+- javax.ws.rs-api-2.0.jar
