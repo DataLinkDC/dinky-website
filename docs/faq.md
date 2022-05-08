@@ -61,10 +61,14 @@ Caused by: java.lang.ClassNotFoundException: org.apache.http.client.HttpClient
  httpclient-4.5.3.jar
  httpcore-4.4.6.jar
 ```
+5.找不到javax/ws/rs/ext/MessageBodyReader类
+![image](https://user-images.githubusercontent.com/40588644/166678799-13450726-6b89-4a04-9911-0ad0b11cf4dd.png)
+**解决办法:**
+在plugins下添加以下包
+- javax.ws.rs-api-2.0.jar
 
 
-
-5.在 Flink 中，如果与 CDH 集成并使用 HiveCatalog，必须要从新编译对应 Flink 版本的源码，在使用中如果不编译，会报如下错误：
+6.在 Flink 中，如果与 CDH 集成并使用 HiveCatalog，必须要从新编译对应 Flink 版本的源码，在使用中如果不编译，会报如下错误：
 
 ![cdh_flink_sql_hive_connector_error](http://www.aiwenmo.com/dinky/docs/zh-CN/faq/cdh_flink_sql_hive_connector_error.jpg)
 
