@@ -69,7 +69,7 @@ CREATE TABLE DWD_INFO (
 );
 ```
 
- Flink 连接配置如何添加变量，详见用户手册注册中心的[创建数据源](../administrator_guide/register_center/datasource_manage#创建数据源)
+ Flink 连接配置如何添加变量，详见用户手册注册中心的[创建数据源](../../administrator_guide/register_center/datasource_manage#创建数据源)
 
 :::warning 注意事项
 

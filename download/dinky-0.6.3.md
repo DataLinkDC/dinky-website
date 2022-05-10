@@ -12,33 +12,38 @@ title: 0.6.3 release
 
 ## Dinky发行说明
 
-Dinky 0.6.3 是一个新增功能和修复的版本。
+Dinky 0.6.3 是一个新增功能和修复的版本。主要是新增了 CDC 整库实时入仓入湖的功能。
 
 ### 新功能
 
-- 新增 CDCSource 同步至 Kafka
-- 新增 CDCSource 同步至 Doris
-- 新增  CDCSource 同步至 Hudi
-- 新增 CDCSource 同步添加 sink 表名规则
-- 新增 CDCSource 同步至 SQL
-- 新增 在 Flink1.13中，CDCSource 字段类型转换
-- 新增 CDCSource 同步添加 sink 表名正则
-- 新增 MysqlCDCSource 同步扩展配置
-- 新增 CDCSOURCE 添加 pkList
-- 新增 Flink 客户端1.15
-
+- 新增 CDC 整库实时同步至 kafka 的一个 topic
+- 新增 CDC 整库实时同步至 kafka 对应 topic
+- 新增 CDC 整库实时入仓 doris
+- 新增 CDC 整库实时入湖 hudi
+- 新增 CDC 整库同步表名规则
+- 新增 CDC 整库实时 sql sink
+- 新增 MysqlCDC 整库同步配置扩展
+- 新增 CDC 整库同步主键注入
+- 新增 Flink 1.15.0 的支持
 
  ### 修复
 
-- 修复 任务停止时的任务状态错误
+- 修复当作业停止时作业状态错误的 bug
 - 修复 Oracle 不支持的字符集
-- 修复 Clickhouse 元数据不显示
-- 修复 元数据切换错误
-- 修复 将 sqlSeparator 的默认值修改为’; r n | ; n’
-- 修复 useBatchModel 参数使用纱线-app 模式批量执行
-- 修复 修改作业名的 bug
-- 修复 mysqldc 整个数据库同步 Hudi 错误
-- 修复 作业计划信息被执行了两次
-- 修复 在同一台机器上部署更多实例时的启动和停止冲突
-- 修复 auto.sh lf 并禁用环境变量
+- 修复 Clickhouse 元数据无法展示的 bug
+- 修复元数据查询切换 bug
+- 修复整库同步 Hudi 无法构建 Schema 的 bug
+- 修复数据源单元测试的 name 缺失 bug
+- 修复默认分隔符为 ';\r\n|;\n' 来解决 windows 和 mac 同时兼容
+- 修复批任务无法正确提交 yarn application 的 bug
+- 修复修改作业名失败的 bug
+- 修复一些错误文档连接
+- 修复获取作业执行计划被执行两次的 bug
 
+ ### 优化
+
+- 优化 Java 流的释放
+- 优化 CDC 整库实时入库 doris
+- 优化同一节点下无法启动多个进程实例的问题
+- 优化微信告警的发送标题
+- 优化启动文件编码及禁用环境变量
