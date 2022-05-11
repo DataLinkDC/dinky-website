@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
     {
         title: '沉浸式',
-        Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+        Svg: require('@site/static/img/immersive.svg').default,
         description: (
             <>
                 自动提示与补全、语法高亮、语句美化、语法校验、调试预览结果、元数据查询、全局变量、
@@ -42,7 +42,7 @@ const FeatureList = [
     },
     {
         title: '易扩展',
-        Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        Svg: require('@site/static/img/easy_of_extend.svg').default,
         description: (
             <>
                 SPI 插件化机制及各种设计模式支持用户快速扩展新功能，如数据源、报警方式、自定义语法等
