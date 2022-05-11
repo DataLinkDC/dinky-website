@@ -12,11 +12,11 @@ const config = {
   url: 'http://www.dlink.top/', // 网站网址 | Your website's URL
   baseUrl: '/', // 站点的相对路径 可将其视为是主机名后的路径 | Path to your website
   staticDirectories: ['static/img'], // 静态文件目录 | Path to static files
-  trailingSlash: true, //此选项允许您自定义 URL/链接后是否添加结尾斜杠 | Whether to append a trailing slash to the URL when rendering URLs
+  // trailingSlash: true, //此选项允许您自定义 URL/链接后是否添加结尾斜杠 | Whether to append a trailing slash to the URL when rendering URLs
   onBrokenLinks: 'ignore', // Docusaurus 在检测到无效链接时的行为 |  Docusaurus behavior when invalid links are detected    -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw' |
   onBrokenMarkdownLinks: 'warn', // Docusaurus 在检测到无效 Markdown 链接时的行为 | Docusaurus behavior when detecting invalid markdown links  -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
   onDuplicateRoutes: 'warn', // Docusaurus 在检测到重复的路由时的行为 |  Behavior of docusaurus when duplicate routes are detected  ->  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
-  favicon: 'side_dinky.svg', // 左侧logo  | left logo
+  favicon: 'dinky_logo.svg', // 左侧logo  | left logo
   organizationName: 'DataLinkDC', // 拥有此源的 GitHub 用户或组织。 用于部署命令。 |  The GitHub user or organization that owns this source. Command for deployment.
   projectName: 'dinky-website', // GitHub 源的名称。 用于部署命令。 | The name of the GitHub repository. Command for deployment.
   deploymentBranch: 'main', // GitHub Pages 的部署分支。 用于部署命令。 | The branch to deploy to GitHub Pages. Command for deployment.
@@ -60,8 +60,12 @@ const config = {
        blog: {
          showReadingTime: true,
          // Please change this to your repo.
-         editUrl:
-           'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+         editUrl: ({locale, versionDocsDirPath, docPath}) => {
+           if (locale !== 'zh-cn') {
+             return `https://github.com/DataLinkDC/dinky-website/tree/master/i18n/${locale}/${docPath}`;
+           }
+           return `https://github.com/DataLinkDC/dinky-website/tree/master/${versionDocsDirPath}/${docPath}`;
+         },
        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -148,6 +152,12 @@ const config = {
               },
             ],
           },
+         {
+           to: '/blog',
+           position: 'right',
+           label: '博客',
+           // activeBaseRegex: `/*/`,
+         },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -204,16 +214,16 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/DataLinkDC/dlink',
               },
-              // {
-              //   label: '最新动态',
-              //   to: '/blog',
-              // },
+              {
+                label: '博客',
+                to: '/blog',
+              },
             ],
           },
         ],
         logo: {
           alt: 'Dinky',
-          src: 'side_dinky.svg',
+          src: 'dinky_logo.svg',
           width: 100,
           height: 30,
         },

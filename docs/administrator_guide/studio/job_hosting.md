@@ -43,7 +43,7 @@ Dinky 将通过 JobManager 的 Rest 端口提交 FlinkSQL 作业至外部的 Fli
 
 :::tip 说明
 
-  需要手动启动 Yarn Session 集群并注册到 Dinky 的集群实例，详见[集群管理](../../register_center/cluster_manage)。
+  需要手动启动 Yarn Session 集群并注册到 Dinky 的集群实例，详见[集群管理](../register_center/cluster_manage)。
 
 :::
 
@@ -57,7 +57,7 @@ Dinky 将通过 Yarn 来创建 Flink Yarn Per-Job 集群。
 
 :::tip 说明
 
-   需要在 Dinky 的集群配置中注册相关的 Hadoop 和 Flink 配置，详见[集群管理](../../register_center/cluster_manage)。
+   需要在 Dinky 的集群配置中注册相关的 Hadoop 和 Flink 配置，详见[集群管理](../register_center/cluster_manage)。
 
 :::
 
@@ -71,7 +71,7 @@ Dinky 将通过 Yarn 来创建 Flink Yarn Application 集群。
 
 :::tip 说明
 
-   需要在 Dinky 的集群配置中注册相关的 Hadoop 和 Flink 配置，详见[集群管理](../../register_center/cluster_manage)。
+   需要在 Dinky 的集群配置中注册相关的 Hadoop 和 Flink 配置，详见[集群管理](../register_center/cluster_manage)。
 
 :::
 
@@ -85,7 +85,7 @@ Dinky 将通过暴露的 NodePort 端口提交 FlinkSQL 作业至外部的 Flink
 
 :::tip 说明
 
-  需要在 Dinky 的集群配置中注册相关的 Kubernetes 和 Flink 配置，详见[集群管理](../../register_center/cluster_manage)。
+  需要在 Dinky 的集群配置中注册相关的 Kubernetes 和 Flink 配置，详见[集群管理](../register_center/cluster_manage)。
 
 :::
 
@@ -99,7 +99,7 @@ Dinky 将通过 dlink-app 镜像创建的 Flink Kubernetes Application 集群。
 
 :::tip 说明
 
-   需要在 Dinky 的集群配置中注册相关的 Kubernetes 和 Flink 配置，详见[集群管理](../../register_center/cluster_manage)。
+   需要在 Dinky 的集群配置中注册相关的 Kubernetes 和 Flink 配置，详见[集群管理](../register_center/cluster_manage)。
 
 :::
 
@@ -111,7 +111,7 @@ Dinky 将把 sql 提交到对应的数据源执行。
 
 :::tip 说明
 
-  需要在数据源中心注册数据库，详见[数据源管理](../../register_center/datasource_manage)
+  需要在数据源中心注册数据库，详见[数据源管理](../register_center/datasource_manage)
 
 :::
 

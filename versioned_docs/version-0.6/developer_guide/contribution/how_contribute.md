@@ -34,13 +34,13 @@ title: 如何贡献
 
 ## 参与文档贡献
 
-请查阅 [文档贡献](../document)
+请查阅 [文档贡献](./document)
  
 ## 参与代码贡献
 
-IDEA 调试请查阅 [本地调试](../../local_debug) 及 [远程调试](../../remote_debug)
+IDEA 调试请查阅 [本地调试](../local_debug) 及 [远程调试](../remote_debug)
 
-贡献请查阅 [Issue 需知](../issue)，[Pull Request 需知](../pull_request)，[Commit Message 需知](../commit_message)
+贡献请查阅 [Issue 需知](./issue)，[Pull Request 需知](./pull_request)，[Commit Message 需知](./commit_message)
 
 ## 如何领取 Issue，提交 Pull Request
 
@@ -48,8 +48,8 @@ IDEA 调试请查阅 [本地调试](../../local_debug) 及 [远程调试](../../
 
 - 所有的 Bug 与新 Feature 建议使用 Issues Page 进行管理。
 - 如果想要开发实现某个 Feature 功能，请先回复该功能所关联的 Issue，表明你当前正在这个 Issue 上工作。 并在回复的时候为自己设置一个最后期限，并添加到回复内容中。
-- 你应该新建一个分支来开始你的工作，分支的名字参考 [Pull Request 需知](../pull_request)。比如，你想完成 feature 功能并提交了 Issue demo，那么你的 branch 名字应为 feature-demo。 功能名称可与导师讨论后确定。
-- 完成后，发送一个 Pull Request 到 Dinky 的 dev 分支，提交过程具体请参考下面《[提交代码须知](../commit_code)》。
+- 你应该新建一个分支来开始你的工作，分支的名字参考 [Pull Request 需知](./pull_request)。比如，你想完成 feature 功能并提交了 Issue demo，那么你的 branch 名字应为 feature-demo。 功能名称可与导师讨论后确定。
+- 完成后，发送一个 Pull Request 到 Dinky 的 dev 分支，提交过程具体请参考下面《[提交代码须知](./commit_code)》。
 
 如果是想提交 Pull Request 完成某一个 Feature 或者修复某个 Bug，这里都建议大家从小处做起，完成一个小功能就提交一次，每次别改动太多文件，改动文件太多也会给 Reviewer 造成很大的心理压力，建议通过多次 Pull Request 的方式完成。
 

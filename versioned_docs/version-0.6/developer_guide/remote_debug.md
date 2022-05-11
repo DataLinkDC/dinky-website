@@ -20,7 +20,7 @@ title: 远程调试
 对于开发者来说，如何在 IDEA 中对作业进行远程调试及提交。下面以 Yarn Session 模式为例。
 
 :::tip 说明
-环境准备及源码导入 IDEA，详见[本地调试](../../developer_guide/local_debug)
+环境准备及源码导入 IDEA，详见[本地调试](../developer_guide/local_debug)
 :::
 
 ## 环境
@@ -211,7 +211,7 @@ yarn-session.sh -n 2 -jm 1024 -tm 4096 -s 6 -d
 - **访问:** 127.0.0.1:8000
 - **账户密码:** admin/admin
 
-在 Dinky-0.6 版本后，不需要额外启动前端，如需进行前后端联调,详见[方式二](../remote_debug#方式二)
+在 Dinky-0.6 版本后，不需要额外启动前端，如需进行前后端联调,详见[方式二](./remote_debug#方式二)
 
 
 

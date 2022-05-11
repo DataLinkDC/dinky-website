@@ -3,7 +3,7 @@
 package-lock.json
 
 # Production
-#/build
+build
 
 # Generated files
 .docusaurus

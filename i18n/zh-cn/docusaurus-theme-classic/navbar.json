@@ -54,5 +54,13 @@
   "item.label.debug": {
     "message": "debug",
     "description": "Navbar item with label debug"
+  },
+  "item.label.博客": {
+    "message": "博客",
+    "description": "Navbar item with label 博客"
+  },
+  "item.label.0.6": {
+    "message": "0.6",
+    "description": "Navbar item with label 0.6"
   }
 }
