@@ -223,7 +223,7 @@ const config = {
         ],
         logo: {
           alt: 'Dinky',
-          src: 'dinky_logo.svg',
+          src: 'side_dinky.svg',
           width: 100,
           height: 30,
         },
