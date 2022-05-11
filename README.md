@@ -57,29 +57,20 @@ $ yarn build / npm run build
   - 只需在根目录下的 `blog` 文件夹下添加新的 `.md` 文件 , 需要注意点如下:
 
   ```text
-   方式1:
-     1. 文件命名格式: `YYYY-MM-DD-title.md` 
-     2. 例如: `2020-01-01-hello-world.md`
-     3. `2020-01-01` 可自动识别为博客创建时间 
-     4. `hello-world` 可自动识别为博客标题
-     博客标题会自动显示在博客页面的博客列表中  
-
-   方式2:
      1. 文件命名格式: `title.md` 
      2. 例如: `hello-world.md`
-     3. 在文件头部信息中 添加属性 date: 2019-05-28 # 博客创建时间
   ```
  - 博客作者的作者信息可以添加到 `authors.yml` 中 ,格式如下:
 
   ```text
   dinky: # 博客作者
-      name: dinky # 博客作者名称
-      title: Copyright © 2022 Dinky, Inc. DataLinkDC. # 博客作者标题
+      name: aiwenmo # 博客作者名称
+      title: Dinky 项目发起人 # 博客作者标题
       url: https://github.com/DataLinkDC/dlink # 博客作者主页
       image_url: http://www.aiwenmo.com/dinky/docs/dinky_logo.svg # 博客作者头像
   ```
 
-  - 作者信息定义完成后 即可在 `md` 文件顶部引用 eg: `authors: [dinky]`
+  - 作者信息定义完成后 即可在 `md` 文件顶部引用 eg: `authors: [dinky]` 
   - 文档头部信息引用模板:
 
   ```text
@@ -87,24 +78,40 @@ $ yarn build / npm run build
   --- 
   slug: first-blog-post  # 博客 slug 等于 文件名中自动解析的 title
   title: First Blog Post # 标题 可覆盖文件名称中的自动解析的 title
-  authors: [dinky] # 可引用  authors.yml 定义的作者名称
-  tags: [Hudi, Flink]  # 文档所属标签 可选项
-  date: 2019-05-28 # 该文章的创建日期 如若文档名称中已定义日期 此处可不写 此处高优先级
+  authors: [dinky] # 可引用  authors.yml 定义的作者名称 可以多个作者 逗号隔开
+  tags: [Hudi, Flink]  # 文档所属标签 可选项(可多个)
+  date: 2022-05-01 # 该文章的创建日期 
   ---  
 
   注意 : 如果不像在 authors.yml 中定义作者信息 模板如下:
   --- 
-  slug: first-blog-post  # 博客 slug 等于 文件名中自动解析的 title
-  title: First Blog Post # 标题 可覆盖文件名称中的自动解析的 title
+  slug: first-blog-post  # 博客 slug 等于文件名
+  title: First Blog Post # 博客 标题 
   authors: 
-       name: dinky # 博客作者名称
-       title: Copyright © 2022 Dinky, Inc. DataLinkDC. # 博客作者标题
+       name: aiwenmo # 博客作者名称
+       title: Dinky 项目发起人 # 博客作者标题
        url: https://github.com/DataLinkDC/dlink # 博客作者主页
        image_url: http://www.aiwenmo.com/dinky/docs/dinky_logo.svg # 博客作者头像
-  tags: [Hudi, Flink]  # 文档所属标签 可选项
-  date: 2019-05-28 # 该文章的创建日期 如若文档名称中已定义日期 此处可不写 此处高优先级
+  tags: [Hudi, Flink]  # 文档所属标签 可选项(可多个且无需定义)
+  date: 2022-05-01 # 该文章的创建日期 
   --- 
   ```
+  为了更方便得提交您的文章 博客相关的格式如下:
+```text
+---
+slug: long-blog-post 
+title: Blog Title
+authors: [aiwenmo]
+tags: [hello, docusaurus]
+---
+
+输入简短的该博客描述信息
+
+<!--truncate--> # 注意:此处用于主页截断 上述的描述信息 以达到首页的博客列表limit 此行必须写
+
+正文
+
+```
 
 ## 文档目录结构
 

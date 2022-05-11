@@ -58,9 +58,20 @@ const config = {
           },
         },
        blog: {
-         showReadingTime: true,
+         showReadingTime: true, // 展示阅读时间 | show read time
+         include: ['**/*.{md,mdx}'],
+         exclude: [
+           '**/_*.{js,jsx,ts,tsx,md,mdx}',
+           '**/_*/**',
+           '**/*.test.{js,jsx,ts,tsx}',
+           '**/__tests__/**',
+         ],
+         sortPosts:"descending", // 博客主页分页的排序规则(会根据时间排序) 降序: 'descending'  升序: 'ascending' | Governs the direction of blog post sorting.
+         postsPerPage: 20, // 博客主页的前{count}篇文章数 | the blog homepage show limit count
+         readingTime: ({content, frontMatter, defaultReadingTime}) =>
+             defaultReadingTime({content, options: {wordsPerMinute: 300}}), // 阅读时间 md文件中如果不写 date: 此属性 默认是当前时间
          // Please change this to your repo.
-         editUrl: ({locale, versionDocsDirPath, docPath}) => {
+         editUrl: ({locale, versionDocsDirPath, docPath}) => { // 博客页面修改编辑按钮
            if (locale !== 'zh-cn') {
              return `https://github.com/DataLinkDC/dinky-website/tree/master/i18n/${locale}/${docPath}`;
            }
@@ -68,7 +79,7 @@ const config = {
          },
        },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css'), // 自定义css文件
         },
       }),
     ],

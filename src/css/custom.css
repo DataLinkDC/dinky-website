@@ -139,3 +139,7 @@
 /*a:visited {color:purple;text-decoration:none;} !* //已访问：紫色、无下划线 *!*/
 a:hover {color: #05b7b2; text-decoration:none;}  /* //鼠标移近：有颜色、无下划线  */
 /*a:hover { text-decoration:none;}  !* //鼠标移近：无下划线  *!*/
+
+h2 {
+  font-size: 2rem;
+}
