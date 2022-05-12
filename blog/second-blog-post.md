@@ -1,11 +1,7 @@
 ---
 slug: second-blog-post
 title: Second Blog Post
-authors:
-  - name: hanfeizi
-    title: Dinky PMC
-    url: https://github.com/DataLinkDC/dlink
-    image_url: http://www.aiwenmo.com/dinky/docs/dinky_logo.svg
+authors: [aiwenmo]
 tags: [Flink, Dinky]
 date: 2019-05-28
 ---
