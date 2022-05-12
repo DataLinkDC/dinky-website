@@ -12,11 +12,11 @@ const config = {
   url: 'http://www.dlink.top/', // 网站网址 | Your website's URL
   baseUrl: '/', // 站点的相对路径 可将其视为是主机名后的路径 | Path to your website
   staticDirectories: ['static/img'], // 静态文件目录 | Path to static files
-  trailingSlash: true, //此选项允许您自定义 URL/链接后是否添加结尾斜杠 | Whether to append a trailing slash to the URL when rendering URLs
+  // trailingSlash: true, //此选项允许您自定义 URL/链接后是否添加结尾斜杠 | Whether to append a trailing slash to the URL when rendering URLs
   onBrokenLinks: 'ignore', // Docusaurus 在检测到无效链接时的行为 |  Docusaurus behavior when invalid links are detected    -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw' |
   onBrokenMarkdownLinks: 'warn', // Docusaurus 在检测到无效 Markdown 链接时的行为 | Docusaurus behavior when detecting invalid markdown links  -> 类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
   onDuplicateRoutes: 'warn', // Docusaurus 在检测到重复的路由时的行为 |  Behavior of docusaurus when duplicate routes are detected  ->  类型：'ignore' | 'log' | 'warn' | 'error' | 'throw'
-  favicon: 'side_dinky.svg', // 左侧logo  | left logo
+  favicon: 'dinky_logo.svg', // 左侧logo  | left logo
   organizationName: 'DataLinkDC', // 拥有此源的 GitHub 用户或组织。 用于部署命令。 |  The GitHub user or organization that owns this source. Command for deployment.
   projectName: 'dinky-website', // GitHub 源的名称。 用于部署命令。 | The name of the GitHub repository. Command for deployment.
   deploymentBranch: 'main', // GitHub Pages 的部署分支。 用于部署命令。 | The branch to deploy to GitHub Pages. Command for deployment.
@@ -57,14 +57,29 @@ const config = {
             return `https://github.com/DataLinkDC/dinky-website/tree/master/${versionDocsDirPath}/${docPath}`;
           },
         },
-//        blog: {
-//          showReadingTime: true,
-//          // Please change this to your repo.
-//          editUrl:
-//            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-//        },
+       blog: {
+         showReadingTime: true, // 展示阅读时间 | show read time
+         include: ['**/*.{md,mdx}'],
+         exclude: [
+           '**/_*.{js,jsx,ts,tsx,md,mdx}',
+           '**/_*/**',
+           '**/*.test.{js,jsx,ts,tsx}',
+           '**/__tests__/**',
+         ],
+         sortPosts:"descending", // 博客主页分页的排序规则(会根据时间排序) 降序: 'descending'  升序: 'ascending' | Governs the direction of blog post sorting.
+         postsPerPage: 20, // 博客主页的前{count}篇文章数 | the blog homepage show limit count
+         readingTime: ({content, frontMatter, defaultReadingTime}) =>
+             defaultReadingTime({content, options: {wordsPerMinute: 300}}), // 阅读时间 md文件中如果不写 date: 此属性 默认是当前时间
+         // Please change this to your repo.
+         editUrl: ({locale, versionDocsDirPath, docPath}) => { // 博客页面修改编辑按钮
+           if (locale !== 'zh-cn') {
+             return `https://github.com/DataLinkDC/dinky-website/tree/master/i18n/${locale}/${docPath}`;
+           }
+           return `https://github.com/DataLinkDC/dinky-website/tree/master/${versionDocsDirPath}/${docPath}`;
+         },
+       },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css'), // 自定义css文件
         },
       }),
     ],
@@ -148,10 +163,21 @@ const config = {
               },
             ],
           },
+         {
+           to: '/blog',
+           position: 'right',
+           label: '博客',
+           // activeBaseRegex: `/*/`,
+         },
           {
             type: 'localeDropdown',
             position: 'right',
           },
+         // {
+         //   to: 'blog',
+         //   label: '博客',
+         //   position: 'right'
+         // },
           {
             href: 'https://github.com/DataLinkDC/dlink',
             label: 'GitHub',
@@ -199,10 +225,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/DataLinkDC/dlink',
               },
-              // {
-              //   label: '最新动态',
-              //   to: '/blog',
-              // },
+              {
+                label: '博客',
+                to: '/blog',
+              },
             ],
           },
         ],

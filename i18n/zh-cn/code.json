@@ -1,54 +1,54 @@
 {
   "theme.ErrorPageContent.title": {
     "message": "这个页面崩溃了.",
-    "description": "页面崩溃时备用页面的标题"
+    "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
     "message": " 再试一次 ",
-    "description": "页面崩溃时重试按钮的标签"
+    "description": "The label of the button to try again when the page crashed"
   },
   "theme.NotFound.title": {
     "message": "找不到页面",
-    "description": " 404页的标题 "
+    "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
     "message": "我们找不到你要找的东西.",
-    "description": " 404页的第一段 "
+    "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
     "message": " 请联系将您链接到原始URL的网站的所有者，并让他们知道他们的链接已断开 .",
-    "description": " 404页的第二段 "
+    "description": "The 2nd paragraph of the 404 page"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "滚动回到顶部",
-    "description": " 返回顶部按钮的ARIA标签 "
+    "message": "回到顶部",
+    "description": "The ARIA label for the back to top button"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "message": "关闭",
-    "description": " 公告栏关闭按钮的ARIA标签 "
+    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.archive.title": {
     "message": "归档",
-    "description": " 博客存档页面的页面和hero标题 "
+    "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
     "message": "归档文件",
-    "description": "博客存档页面的页面和hero标题"
+    "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
     "message": "博客列表页面导航",
-    "description": " 博客分页的ARIA标签 "
+    "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "更新的条目",
-    "description": " 用于导航到较新博客帖子页面（上一页）的标签 "
+    "message": "上篇博客",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "旧条目",
-    "description": " 用于导航到旧博客帖子页面（下一页）的标签 "
+    "message": "下篇博客",
+    "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": " 一分钟读取|{readingTime} 分钟读取 ",
+    "message": " 阅读于 {readingTime} 分钟前 ",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMoreLabel": {
@@ -56,27 +56,27 @@
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readMore": {
-    "message": "阅读更多",
+    "message": "阅读更多...",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "博客帖子页面导航",
+    "message": "博客页面导航",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "更新的帖子",
+    "message": "上篇博客",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "旧请求",
+    "message": "下篇博客",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "博客最近的帖子导航",
+    "message": "博客列表",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.blog.post.plurals": {
-    "message": " 一个帖子|{count}个帖子 ",
+    "message": " {count} 个博客 ",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
@@ -187,7 +187,7 @@
     "description": "The label alongside a tag list"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "在这一页上",
+    "message": "在此页上",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.CodeBlock.copied": {
@@ -219,7 +219,7 @@
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "标签",
+    "message": "标签列表:",
     "description": "The title of the tag list page"
   }
 }

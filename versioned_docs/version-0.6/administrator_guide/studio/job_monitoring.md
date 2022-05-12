@@ -13,7 +13,7 @@ title: 作业监控
 
 ## 配置作业监控告警
 
-详见注册中心的[报警管理](../../../administrator_guide/register_center/warning)
+详见注册中心的[报警管理](../../administrator_guide/register_center/warning)
 
 ## 查看作业 Flink 监控指标
 
@@ -27,6 +27,6 @@ title: 作业监控
 
 :::tip 说明
 
-  查看 Flink 监控指标详见**运维中心**的[监控指标一览](../devops_center/indicators_list.md)
+  查看 Flink 监控指标详见**运维中心**的[监控指标一览](../devops_center/indicators_list)
 
 :::

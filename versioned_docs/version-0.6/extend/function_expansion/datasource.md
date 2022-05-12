@@ -18,7 +18,7 @@ title: 扩展数据源
    - ClickHouse 
    - Hive ``需要的jar包: hive-jdbc-2.1.1.jar && hive-service-2.1.1.jar``
 
-使用以上数据源,详见注册中心[数据源管理](../../../administrator_guide/register_center/datasource_manage),配置数据源连接
+使用以上数据源,详见注册中心[数据源管理](../../administrator_guide/register_center/datasource_manage),配置数据源连接
 :::tip 注意事项
   Dinky 不在对 Starorcks 进行额外扩展，Doris 和 Starorcks 底层并无差别，原则上只是功能区分。经社区测试验证，可采用 Doris 扩展连接 Starrocks。
 :::
@@ -26,7 +26,7 @@ title: 扩展数据源
 
 ## 准备工作
 - 本地开发环境搭建
-  - 详见 [开发者本地调试手册](../../../developer_guide/local_debug)
+  - 详见 [开发者本地调试手册](../../developer_guide/local_debug)
 
 ## 后端开发
 - 本文以 Hive 数据源扩展为例
@@ -619,5 +619,5 @@ eg:
 ----
 
 :::info 说明
-至此 , 基于 Dinky 扩展数据源完成 , 如您也有扩展需求 ,请参照如何 [[Issuse]](../../../developer_guide/contribution/issue)  和如何  [[提交 PR]](../../../developer_guide/contribution/pull_request)
+至此 , 基于 Dinky 扩展数据源完成 , 如您也有扩展需求 ,请参照如何 [[Issuse]](../../developer_guide/contribution/issue)  和如何  [[提交 PR]](../../developer_guide/contribution/pull_request)
 :::

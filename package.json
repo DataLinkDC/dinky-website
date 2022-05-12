@@ -1,6 +1,6 @@
 {
-  "name": "website",
-  "version": "0.0.0",
+  "name": "dinky-website",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "clear": "docusaurus clear",

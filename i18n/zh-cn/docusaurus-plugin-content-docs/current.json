@@ -86,5 +86,25 @@
   "sidebar.tutorialSidebar.category.参与贡献": {
     "message": "参与贡献",
     "description": "The label for category 参与贡献 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.DDL 语句": {
+    "message": "DDL 语句",
+    "description": "The label for category DDL 语句 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.DML 语句": {
+    "message": "DML 语句",
+    "description": "The label for category DML 语句 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.数据集成指南": {
+    "message": "数据集成指南",
+    "description": "The label for category 数据集成指南 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.用户手册": {
+    "message": "用户手册",
+    "description": "The label for category 用户手册 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category. Connector": {
+    "message": " Connector",
+    "description": "The label for category  Connector in sidebar tutorialSidebar"
   }
 }

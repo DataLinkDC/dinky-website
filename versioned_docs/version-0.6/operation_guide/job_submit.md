@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-id: flinksql_job_submit
+id: job_submit
 title: 作业提交
 ---
 

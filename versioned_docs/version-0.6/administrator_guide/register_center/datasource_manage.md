@@ -36,4 +36,4 @@ title: 数据源管理
 **是否启用：** 默认禁用，需要开启
 
 
-当前数据库统一使用如上定义的参数名称配置数据源连接。当前支持的数据源详见 [扩展数据源](../../../extend/function_expansion/datasource)。
+当前数据库统一使用如上定义的参数名称配置数据源连接。当前支持的数据源详见 [扩展数据源](../../extend/function_expansion/datasource)。

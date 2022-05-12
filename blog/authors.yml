@@ -1,17 +1,5 @@
-endi:
-  name: dinky
-  title: Maintainer of Docusaurus
+aiwenmo:
+  name: aiwenmo
+  title: Dinky 项目发起人
   url: https://github.com/DataLinkDC/dlink
-  image_url: /static/img/side_dinky.svg
-
-dinky:
-  name: dinky
-  title: Front End Engineer @ Facebook
-  url: https://github.com/DataLinkDC/dlink
-  image_url: /static/img/side_dinky.svg
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://github.com/DataLinkDC/dlink
-  image_url: /static/img/side_dinky.svg
+  image_url: http://www.aiwenmo.com/dinky/docs/dinky_logo.svg

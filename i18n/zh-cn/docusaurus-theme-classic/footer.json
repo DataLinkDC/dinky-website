@@ -38,5 +38,9 @@
   "copyright": {
     "message": "Copyright © 2022 Dinky, Inc. DataLinkDC.",
     "description": "The footer copyright"
+  },
+  "link.item.label.博客": {
+    "message": "博客",
+    "description": "The label of footer link with label=最新动态 linking to /blog"
   }
 }
