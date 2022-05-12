@@ -30,16 +30,16 @@ const config = {
     defaultLocale: 'zh-cn',
     locales: ['zh-cn'],
     // locales: ['zh-cn','en'],
-    // localeConfigs: {
-    //  'zh-cn': {
-    //    label: "简体中文",
-    //    direction: 'ltr',
-    //  },
+    localeConfigs: {
+     'zh-cn': {
+       label: "简体中文",
+       direction: 'ltr',
+     },
     //  'en': {
     //    label: "English",
     //    direction: 'ltr',
     //  },
-    // },
+    },
   },
   presets: [
     [
@@ -141,9 +141,9 @@ const config = {
             activeBaseRegex: `/download/`,
           },
           {
-            to: '/docs/next/developer_guide/debug',
-            position: 'right',
             label: '开发者指南',
+            to: '/docs/next/developer_guide/contribution/how_contribute',
+            position: 'right',
             items: [
               {
                 label: "如何参与",
@@ -156,10 +156,6 @@ const config = {
               {
                 label: "远程调试",
                 to: "/docs/next/developer_guide/remote_debug",
-              },
-              {
-                label: "debug",
-                to: "/docs/next/developer_guide/debug",
               },
             ],
           },

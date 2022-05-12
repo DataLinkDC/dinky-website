@@ -101,7 +101,7 @@ $ yarn build / npm run build
 ---
 slug: long-blog-post 
 title: Blog Title
-authors: [aiwenmo]
+authors: [dinky]
 tags: [hello, docusaurus]
 ---
 
