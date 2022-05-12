@@ -45,6 +45,10 @@ export HADOOP_HOME=/opt/cloudera/parcels/CDH/lib/hadoop
 
 如果添加 flink-shade-hadoop-uber-3 包后，请手动删除该包内部的javax.servlet 等冲突内容
 
+``` bash
+zip -d flink-shaded-hadoop-3-uber-*.jar javax/servlet/\*
+```
+
 4.连接hive异常
 
 ``` java
