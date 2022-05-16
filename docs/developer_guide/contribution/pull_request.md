@@ -3,9 +3,6 @@ sidebar_position: 4
 id: pull_request
 title: Pull Request 须知
 ---
-
-
-
 Pull Request 本质上是一种软件的合作方式，是将涉及不同功能的代码，纳入主干的一种流程。这个过程中，可以进行讨论、审核和修改代码。
 
 在 Pull Request 中尽量不讨论代码的实现方案，代码及其逻辑的大体实现方案应该尽量在 Issue 或者邮件列表中被讨论确定，在 Pull Request 中我们尽量只关注代码的格式以及代码规范等信息，从而避免实现方式的意见不同而导致 waste time。
@@ -15,16 +12,16 @@ Pull Request 本质上是一种软件的合作方式，是将涉及不同功能�
 标题格式：[`Pull Request 类型`-`Issue 号`][`模块名`] `Pull Request 描述`
 
 其中`Pull Request 类型`和`Issue 类型`的对应关系如下：
-| Issue 类型       | 描述                           | 样例 |
-| ---------------- | -------------------------- | ------ |
-|  Issue 类型   |   Pull Request 类型     | 样例（假设 Issue 号为 3333）|
-|  Feature   |    Feature    |    [Feature-3333][admin] Implement xxx    |
-|  Bug   |   Fix     |    [Fix-3333][admin] Fix xxx    |
-|  Improvement   |   Improvement     |    [Improvement-3333][alert] Improve the performance of xxx    |
-|   Test  |    Test    |   [Test-3333][metadata-mysql] Add the e2e test of xxx     |
-| Sub-Task    |   Sub-Task 对应的父类型     |   [Feature-3333][admin] Implement xxx     |
 
 
+| Issue 类型  | 描述                  | 样例                                                     |
+| ------------- | ----------------------- | ---------------------------------------------------------- |
+| Issue 类型  | Pull Request 类型     | 样例（假设 Issue 号为 3333）                             |
+| Feature     | Feature               | [Feature-3333][admin] Implement xxx                      |
+| Bug         | Fix                   | [Fix-3333][admin] Fix xxx                                |
+| Improvement | Improvement           | [Improvement-3333][alert] Improve the performance of xxx |
+| Test        | Test                  | [Test-3333][metadata-mysql] Add the e2e test of xxx      |
+| Sub-Task    | Sub-Task 对应的父类型 | [Feature-3333][admin] Implement xxx                      |
 
 其中 `Issue 号`是指当前 Pull Request 对应要解决的 Issue 号，`模块名`同 Issue 的模块名。
 
@@ -48,15 +45,11 @@ Pull Request 本质上是一种软件的合作方式，是将涉及不同功能�
     <img src="/img/checkstyle-idea.png" alt="checkstyle idea configuration" />
 </p>
 
-
-
 截止目前，Checkstyle 插件已经配置完成了，当有代码或者文件不符合风格时就会显示在 Checkstyle 中。但强烈建议同时配置 Intellij IDEA 的代码风格，完成配置后可以使用 Intellij IDEA 自动格式化功能。你可以在路径`Preferences -> Editor -> Code Style -> Java`找到配置，请参照下图完成其配置
 
 <p align="center">
     <img src="/img/code-style-idea.png" alt="code style idea configuration" />
 </p>
-
-
 
 1. 在提交 pull request 前格式化你的代码：完成上面全部后，你可以使用快捷键`Command + L`(Mac用户) or `Ctrl+L`(Windows用户)在 Intellij IDEA 完成自动格式化。格式化代码的最佳时间是将你的修改提交到本地 git 版本库之前
 
