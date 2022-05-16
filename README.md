@@ -57,20 +57,21 @@ $ yarn build / npm run build
   - 只需在根目录下的 `blog` 文件夹下添加新的 `.md` 文件 , 需要注意点如下:
 
   ```text
-     1. 文件命名格式: `title.md` 
-     2. 例如: `hello-world.md`
+     1. 文件命名格式: `年-月-日-title.md`  切记不可以中文命名 命名尽量见名知意 言简意赅
+     2. 例如: `2022-01-01-hello-world.md`
+     3. 文件名称中的日期将自动解析为改文章的创建日期
   ```
  - 博客作者的作者信息可以添加到 `authors.yml` 中 ,格式如下:
 
   ```text
-  dinky: # 博客作者
+  aiwenmo: # 博客作者
       name: aiwenmo # 博客作者名称
       title: Dinky 项目发起人 # 博客作者标题
       url: https://github.com/DataLinkDC/dlink # 博客作者主页
       image_url: http://www.aiwenmo.com/dinky/docs/dinky_logo.svg # 博客作者头像
   ```
 
-  - 作者信息定义完成后 即可在 `md` 文件顶部引用 eg: `authors: [dinky]` 
+  - 作者信息定义完成后 即可在 `md` 文件顶部引用 eg: `authors: [aiwenmo]` 
   - 文档头部信息引用模板:
 
   ```text
@@ -80,7 +81,6 @@ $ yarn build / npm run build
   title: First Blog Post # 标题 可覆盖文件名称中的自动解析的 title
   authors: [dinky] # 可引用  authors.yml 定义的作者名称 可以多个作者 逗号隔开
   tags: [Hudi, Flink]  # 文档所属标签 可选项(可多个)
-  date: 2022-05-01 # 该文章的创建日期 
   ---  
 
   注意 : 如果不像在 authors.yml 中定义作者信息 模板如下:
@@ -93,7 +93,6 @@ $ yarn build / npm run build
        url: https://github.com/DataLinkDC/dlink # 博客作者主页
        image_url: http://www.aiwenmo.com/dinky/docs/dinky_logo.svg # 博客作者头像
   tags: [Hudi, Flink]  # 文档所属标签 可选项(可多个且无需定义)
-  date: 2022-05-01 # 该文章的创建日期 
   --- 
   ```
   为了更方便得提交您的文章 博客相关的格式如下:
@@ -112,6 +111,13 @@ tags: [hello, docusaurus]
 正文
 
 ```
+
+**注意:** 如您的博客文章中含有图片 请遵守以下规范:
+- 文章内图片统一放置在 `blog/blog_img/{文件的title名称 命名新的文件夹}/`
+- 图片需要更名: 不要使用默认 `img.png` 根据其用途命名, 不能有中文 , 尽量见名知意
+- 文档内引用图片 请使用相对路径 eg: `![图片名称](./blog_img/{文件的title名称 命名新的文件夹}/demo.png)`
+
+
 
 ## 文档目录结构
 

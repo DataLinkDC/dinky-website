@@ -140,6 +140,6 @@
 a:hover {color: #05b7b2; text-decoration:none;}  /* //鼠标移近：有颜色、无下划线  */
 /*a:hover { text-decoration:none;}  !* //鼠标移近：无下划线  *!*/
 
-h2 {
-  font-size: 2rem;
+h2.blogPostTitle_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogPostItem-styles-module{
+  font-size: 1.3rem;
 }

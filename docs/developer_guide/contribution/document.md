@@ -11,12 +11,12 @@ title: 文档贡献
 
 ### 获取文档项目
 
-Dinky 项目的文档维护在源码 docs 目录中。
+Dinky 项目的文档维护在 [dinky-website](https://github.com/DataLinkDC/dinky-website) 。
 
 首先你需要先将源项目 fork 到自己的 github 仓库中，然后将 fork 的文档克隆到本地计算机中。
 
 ```shell
-git clone https://github.com/<your-github-user-name>/dlink
+git clone https://github.com/<your-github-user-name>/dinky-website
 ```
 ### 文档环境
 
