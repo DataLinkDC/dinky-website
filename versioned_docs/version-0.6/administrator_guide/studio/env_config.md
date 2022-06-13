@@ -37,13 +37,13 @@ title: 环境配置
 
 2.将 dlink-app.jar 上传到 **系统设置 > Flink 设置** 中的 **提交 FlinkSQL 的 Jar 文件路径** 的 hdfs 配置地址。
 
-如何注册 Yarn Application 的集群配置，详见[集群管理](../register_center/cluster_manage#集群配置管理) 的集群配置管理。
+如何注册 Yarn Application 的集群配置，详见[集群管理](../register_center/cluster_manage) 的集群配置管理。
 
 ### Kubernetes Session 集群
 
 根据 Flink 官网手动部署一个 Flink Kubernetes Session 集群，并暴露 **NodePort**， 注册到 **集群实例** 中。
 
-如何注册 Kubernetes Session 集群， 详见[集群管理](../register_center/cluster_manage#集群实例管理) 的集群实例管理。
+如何注册 Kubernetes Session 集群， 详见[集群管理](../register_center/cluster_manage) 的集群实例管理。
 
 ### Kubernetes Application 集群
 
@@ -51,7 +51,7 @@ title: 环境配置
 
 2.将 dlink-app.jar 打包成完整的 Flink 镜像，在 **系统设置 > Flink 设置** 中的 **提交 FlinkSQL 的 Jar 文件路径** 的配置 dlink-app.jar 的 local 地址。
 
-如何注册 Kubernetes Application 的集群配置，详见[集群管理](../register_center/cluster_manage#集群配置管理) 的集群配置管理。
+如何注册 Kubernetes Application 的集群配置，详见[集群管理](../register_center/cluster_manage) 的集群配置管理。
 
 ## 其他数据源环境配置
 
