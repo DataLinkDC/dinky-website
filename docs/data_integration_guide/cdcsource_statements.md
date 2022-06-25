@@ -54,15 +54,14 @@ WITH 参数通常用于指定 CDCSOURCE 所需参数，语法为`'key1'='value1'
 
 | 配置项            | 是否必须 | 默认值        | 说明                                                         |
 | ----------------- | -------- | ------------- | ------------------------------------------------------------ |
-| connector         | 是       | 无            | 当前支持mysql-cdc及oracle-cdc                                |
-| hostname          | 是       | 无            | 同 Flink CDC                                                 |
-| port              | 是       | 无            | 同 Flink CDC                                                 |
-| username          | 是       | 无            | 同 Flink CDC                                                 |
-| password          | 是       | 无            | 同 Flink CDC                                                 |
-| scan.startup.mode | 否       | latest-offset | 同 Flink CDC                                                 |
-| database-name     | 否       | 无            | 支持正则                                                     |
-| schema-name       | 否       | 无            | 支持正则                                                     |
-| table-name        | 否       | 无            | 支持正则，如果使用`库名.表名`的形式，需要使用 \.             |
+| connector         | 是       | 无            | 指定要使用的连接器，当前支持 mysql-cdc 及 oracle-cdc         |
+| hostname          | 是       | 无            | 数据库服务器的 IP 地址或主机名                               |
+| port              | 是       | 无            | 数据库服务器的端口号                                         |
+| username          | 是       | 无            | 连接到数据库服务器时要使用的数据库的用户名                   |
+| password          | 是       | 无            | 连接到数据库服务器时要使用的数据库的密码                     |
+| scan.startup.mode | 否       | latest-offset | 消费者的可选启动模式，有效枚举为“initial”和“latest-offset”   |
+| database-name     | 否       | 无            | 如果table-name="test\\.student,test\\.score",此参数可选。    |
+| table-name        | 否       | 无            | 支持正则,示例:"test\\.student,test\\.score"                  |
 | source.*          | 否       | 无            | 指定个性化的 CDC 配置，如 source.server-time-zone 即为 server-time-zone 配置参数。 |
 | checkpoint        | 否       | 无            | 单位 ms                                                      |
 | parallelism       | 否       | 无            | 任务并行度                                                   |
@@ -226,6 +225,5 @@ EXECUTE CDCSOURCE demo WITH (
 - 配置项中的英文逗号前不能加空格，需要紧随右单引号。
 - 禁用全局变量、语句集、批模式。
 - 目前不支持 Application 模式，后续支持。
-- 目前源码只实现 MysqlCDC 和 Oracle CDC，其他 CDC 扩展很简单。
 
 :::
