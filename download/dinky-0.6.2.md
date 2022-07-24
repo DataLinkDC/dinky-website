@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 95
 title: 0.6.2 release
 ---
 

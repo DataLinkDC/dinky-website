@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 98
 title: 0.5.1 release
 ---
 

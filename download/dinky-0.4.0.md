@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 100
 title: 0.4.0 release
 ---
 
