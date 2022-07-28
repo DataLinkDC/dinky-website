@@ -11,7 +11,7 @@ title: 方言介绍
  - FlinkJar
  - FlinkSqlEnv
  - Mysql
- - PostGreSql
+ - PostgreSql
  - Oracle
  - SqlServer
  - Phoenix
