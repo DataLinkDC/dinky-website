@@ -1,7 +1,7 @@
 ---
 sidebar_position: 13
 id: kudu
-title: kudu
+title: Kudu
 ---
 
 
