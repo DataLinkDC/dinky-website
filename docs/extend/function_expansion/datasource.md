@@ -12,7 +12,7 @@ title: 扩展数据源
    - MySQL
    - Oracle
    - SQLServer
-   - PostGreSQL
+   - PostgreSQL
    - Phoenix
    - Doris(Starrocks)
    - ClickHouse 
@@ -20,7 +20,7 @@ title: 扩展数据源
 
 使用以上数据源,详见注册中心[数据源管理](../../administrator_guide/register_center/datasource_manage),配置数据源连接
 :::tip 注意事项
-  Dinky 不在对 Starorcks 进行额外扩展，Doris 和 Starorcks 底层并无差别，原则上只是功能区分。经社区测试验证，可采用 Doris 扩展连接 Starrocks。
+  Dinky 不在对 Starrocks 进行额外扩展，Doris 和 Starrocks 底层并无差别，原则上只是功能区分。经社区测试验证，可采用 Doris 扩展连接 Starrocks。
 :::
 ----
 
@@ -560,7 +560,7 @@ public class HiveQuery extends AbstractDBQuery {
             <artifactId>模块名称</artifactId>
             <scope>${scope.runtime}</scope>
         </dependency>
-``` 
+```
   - 在 **dlink** 根下 **pom.xml** 中 ,新增如下内容:
 ```xml
         <dependency>
@@ -580,7 +580,7 @@ public class HiveQuery extends AbstractDBQuery {
                 <include>模块名称-${project.version}.jar</include>
             </includes>
         </fileSet>
-  ```
+```
 
 至此 如您的代码没有问题的话 后端代码扩展就已经完成了 !
 
@@ -590,7 +590,7 @@ public class HiveQuery extends AbstractDBQuery {
 - **dlink-web** 为 Dinky 的前端模块
 - 扩展数据源相关表单所在路径: `dlink-web/src/pages/DataBase/`
   - 修改 `dlink-web/src/pages/DataBase/components/DBForm.tsx` 的 **const data** 中 添加如下:
-eg:
+  eg:
 ```shell
          {
            type: 'Hive', 

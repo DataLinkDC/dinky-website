@@ -12,7 +12,7 @@ title: Flink SQL 作业快速入门
 
 ### 创建集群配置或集群实例
 
-首先，登录 Dlinky，选择**注册中心>>集群管理>>集群实例管理或集群配置管理**，点击**新建** Flink 集群
+首先，登录 Dinky，选择**注册中心>>集群管理>>集群实例管理或集群配置管理**，点击**新建** Flink 集群
 
 ![](http://www.aiwenmo.com/dinky/docs/zh-CN/quick_start/flinksql_quick_start/%E5%88%9B%E5%BB%BA%E9%9B%86%E7%BE%A4.png)
 
@@ -36,7 +36,7 @@ title: Flink SQL 作业快速入门
 
 ### 集群实例
 
-Dinky 推荐您在使用 Yarn Session、K8s Session、StandAlone 采用集群实例的方式注册集群。
+Dinky 推荐您在使用 Yarn Session、K8s Session、Standalone 采用集群实例的方式注册集群。
 
 **操作步骤**
 
@@ -86,7 +86,7 @@ Dinky 推荐您在使用 Yarn Per Job、Yarn Application、K8s Application 采�
 
 ```
 https://github.com/ververica/flink-sql-cookbook
-#下载 flink-faker 放入$FLINK_HOME/lib下及Dlinky的plugins下
+#下载 flink-faker 放入$FLINK_HOME/lib下及Dinky的plugins下
 https://github.com/knaufk/flink-faker/releases
 ```
 
@@ -116,7 +116,7 @@ FlinkSQL 作业编写，分为三部分内容，分别是** SET 参数设置、D
 
 当 FlinkSQL 编写完成后，即可进行作业的配置。作业配置的详细说明详见用户手册的[作业基础配置](./administrator_guide/studio/job_config.md) 
 
-在作业配置中，您可以选择作业执行模式、Flink 集群、SavePoint策略等配置，对作业进行提交前的配置。
+在作业配置中，您可以选择作业执行模式、Flink 集群、Savepoint策略等配置，对作业进行提交前的配置。
 
 ![job_config](http://www.aiwenmo.com/dinky/docs/zh-CN/quick_start/flinksql_quick_start/job_config.png)
 
@@ -132,7 +132,7 @@ FlinkSQL 作业编写，分为三部分内容，分别是** SET 参数设置、D
 
 ### 发布运行作业
 
-在数据写入 Sink 端时，Dlinky 提供了**异步提交** 和 **上线发布**功能，将其作业提交到远程集群
+在数据写入 Sink 端时，Dinky 提供了**异步提交** 和 **上线发布**功能，将其作业提交到远程集群
 
 ![SQLInsert](http://www.aiwenmo.com/dinky/docs/zh-CN/quick_start/flinksql_quick_start/SQLInsert.png)
 
